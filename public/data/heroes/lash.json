@@ -1,0 +1,127 @@
+{
+  "id": "lash",
+  "name": "Lash",
+  "tags": [
+    "Assassin",
+    "Mobility",
+    "Initiator"
+  ],
+  "baseStats": {
+    "health": 750,
+    "healthRegen": 2,
+    "bulletDamage": 18,
+    "fireRate": 4.55,
+    "clipSize": 35,
+    "reloadTime": 2.1,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.2,
+    "sprintSpeed": 2.1,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "ground_strike",
+      "name": "Ground Strike",
+      "key": "1",
+      "type": "active",
+      "description": "Slam the ground, dealing damage in an area. Deals more damage in the center.",
+      "cooldown": 12,
+      "baseDamage": 80,
+      "spiritCoefficient": 0.7,
+      "centerBonusDamage": 1.5,
+      "radius": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+35 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+35 Damage, +3m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Center also stuns for 0.5s"
+        }
+      ]
+    },
+    {
+      "id": "grapple",
+      "name": "Grapple",
+      "key": "2",
+      "type": "active",
+      "description": "Fire a grapple that pulls you to terrain or enemies. Hitting an enemy deals damage.",
+      "cooldown": 6,
+      "baseDamage": 35,
+      "spiritCoefficient": 0.2,
+      "range": 30,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10m Range"
+        },
+        {
+          "points": 2,
+          "effect": "+25 Damage, -2s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "Grappling an enemy also stuns them for 0.5s"
+        }
+      ]
+    },
+    {
+      "id": "flog",
+      "name": "Flog",
+      "key": "3",
+      "type": "active",
+      "description": "Whip all enemies in a cone, dealing damage and pulling them towards you.",
+      "cooldown": 25,
+      "baseDamage": 95,
+      "spiritCoefficient": 0.95,
+      "pullDistance": 10,
+      "coneAngle": 70,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+40 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+40 Damage, +20 degree cone"
+        },
+        {
+          "points": 5,
+          "effect": "+60 Damage, Also slows pulled enemies by 30% for 2s"
+        }
+      ]
+    },
+    {
+      "id": "death_slam",
+      "name": "Death Slam",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Grab an enemy and slam them into the ground, dealing massive damage based on height fallen.",
+      "cooldown": 100,
+      "baseDamage": 200,
+      "spiritCoefficient": 1.5,
+      "heightMultiplier": 4.5,
+      "grabDuration": 1.2,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+75 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+75 Damage, +1.0 Height Multiplier"
+        },
+        {
+          "points": 5,
+          "effect": "+100 Damage, -25s Cooldown, Slam creates shockwave"
+        }
+      ]
+    }
+  ]
+}

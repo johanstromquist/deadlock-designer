@@ -1,0 +1,127 @@
+{
+  "id": "vindicta",
+  "name": "Vindicta",
+  "tags": [
+    "Carry",
+    "Sniper",
+    "Ranged"
+  ],
+  "baseStats": {
+    "health": 725,
+    "healthRegen": 2,
+    "bulletDamage": 27,
+    "fireRate": 2.22,
+    "clipSize": 14,
+    "reloadTime": 1.9,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.9,
+    "sprintSpeed": 1.6,
+    "stamina": 2
+  },
+  "abilities": [
+    {
+      "id": "stake",
+      "name": "Stake",
+      "key": "1",
+      "type": "active",
+      "description": "Fire a stake that impales and damages the first enemy hit. Deals bonus damage at range.",
+      "cooldown": 9,
+      "baseDamage": 75,
+      "spiritCoefficient": 0.6,
+      "bonusRangeDamage": 1.4,
+      "bonusRangeThreshold": 25,
+      "range": 50,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+25 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+25 Damage, -2s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+40 Damage, Stake also slows by 35% for 2s"
+        }
+      ]
+    },
+    {
+      "id": "flight",
+      "name": "Flight",
+      "key": "2",
+      "type": "active",
+      "description": "Take flight, gaining increased movement speed and the ability to hover. Cannot use gun while ascending.",
+      "cooldown": 50,
+      "duration": 9,
+      "moveSpeedBonus": 3,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+3s Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+1.5 Move Speed, -12s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+4s Duration, Can shoot while ascending"
+        }
+      ]
+    },
+    {
+      "id": "crows_sight",
+      "name": "Crow's Sight",
+      "key": "3",
+      "type": "active",
+      "description": "Send out a crow to mark an enemy. Marked enemies are revealed and take bonus damage from Vindicta.",
+      "cooldown": 30,
+      "bonusDamage": 0.2,
+      "revealDuration": 14,
+      "range": 45,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+5% Bonus Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+5% Bonus Damage, +6s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+10% Bonus Damage, Marked enemy is also slowed by 20%"
+        }
+      ]
+    },
+    {
+      "id": "assassinate",
+      "name": "Assassinate",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Zoom in and charge a powerful shot. Deals massive damage based on charge time. Can headshot.",
+      "cooldown": 100,
+      "baseDamage": 200,
+      "spiritCoefficient": 2,
+      "maxChargeDamage": 480,
+      "chargeTime": 2.5,
+      "headshotMultiplier": 1.5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+60 Max Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+100 Max Damage, -0.5s Charge Time"
+        },
+        {
+          "points": 5,
+          "effect": "+140 Max Damage, -20s Cooldown"
+        }
+      ]
+    }
+  ]
+}

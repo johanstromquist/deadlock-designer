@@ -1,0 +1,127 @@
+{
+  "id": "abrams",
+  "name": "Abrams",
+  "tags": [
+    "Tank",
+    "Brawler",
+    "Melee"
+  ],
+  "baseStats": {
+    "health": 770,
+    "healthRegen": 1.5,
+    "bulletDamage": 63,
+    "fireRate": 0.86,
+    "clipSize": 10,
+    "reloadTime": 1.35,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.4,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "siphon_life",
+      "name": "Siphon Life",
+      "key": "1",
+      "type": "active",
+      "description": "Drain health from nearby enemies in front of you. Deals damage over time and heals Abrams for a percentage of damage dealt.",
+      "cooldown": 32,
+      "duration": 3.5,
+      "baseDamage": 44,
+      "spiritCoefficient": 0.7,
+      "healPercent": 0.6,
+      "range": 12,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 DPS, +1m Range"
+        },
+        {
+          "points": 2,
+          "effect": "+15 DPS, +20% Healing"
+        },
+        {
+          "points": 5,
+          "effect": "+20 DPS, Gains Spirit Lifesteal"
+        }
+      ]
+    },
+    {
+      "id": "shoulder_charge",
+      "name": "Shoulder Charge",
+      "key": "2",
+      "type": "active",
+      "description": "Charge forward, colliding with enemies and carrying them along. On wall collision, deals damage and stuns.",
+      "cooldown": 22,
+      "baseDamage": 100,
+      "spiritCoefficient": 1,
+      "stunDuration": 1,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+50 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+0.5s Stun Duration"
+        },
+        {
+          "points": 5,
+          "effect": "Can charge through walls, +75 Damage"
+        }
+      ]
+    },
+    {
+      "id": "infernal_resilience",
+      "name": "Infernal Resilience",
+      "key": "3",
+      "type": "passive",
+      "description": "After taking damage, regenerate a portion of the damage over time. Taking additional damage pauses regeneration.",
+      "cooldown": 0,
+      "regenPercent": 0.16,
+      "regenDuration": 16,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+4% Damage Regenerated"
+        },
+        {
+          "points": 2,
+          "effect": "+4% Damage Regenerated"
+        },
+        {
+          "points": 5,
+          "effect": "+8% Damage Regenerated, Regen pauses 1s faster"
+        }
+      ]
+    },
+    {
+      "id": "seismic_impact",
+      "name": "Seismic Impact",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Leap into the air and crash down, dealing damage and stunning enemies in an area. Landing creates a damaging shockwave.",
+      "cooldown": 110,
+      "baseDamage": 200,
+      "spiritCoefficient": 1.4,
+      "stunDuration": 1.1,
+      "radius": 14,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+100 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+4m Radius, +0.25s Stun"
+        },
+        {
+          "points": 5,
+          "effect": "+100 Damage, +0.5s Stun, -30s Cooldown"
+        }
+      ]
+    }
+  ]
+}

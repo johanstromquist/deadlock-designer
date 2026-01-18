@@ -1,0 +1,124 @@
+{
+  "id": "lady_geist",
+  "name": "Lady Geist",
+  "tags": [
+    "Carry",
+    "Mage",
+    "Sustain"
+  ],
+  "baseStats": {
+    "health": 850,
+    "healthRegen": 1,
+    "bulletDamage": 27,
+    "fireRate": 1.72,
+    "clipSize": 8,
+    "reloadTime": 1.8,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.3,
+    "sprintSpeed": 2.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "essence_bomb",
+      "name": "Essence Bomb",
+      "key": "1",
+      "type": "active",
+      "description": "Throw a bomb that damages enemies and heals you for a percentage of damage dealt.",
+      "cooldown": 14,
+      "baseDamage": 90,
+      "spiritCoefficient": 0.8,
+      "healPercent": 0.5,
+      "radius": 6,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+40 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+15% Heal, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+60 Damage, Applies -25% healing reduction to enemies"
+        }
+      ]
+    },
+    {
+      "id": "life_drain",
+      "name": "Life Drain",
+      "key": "2",
+      "type": "active",
+      "description": "Drain health from an enemy over time, healing yourself for more than the damage dealt.",
+      "cooldown": 25,
+      "baseDamage": 35,
+      "spiritCoefficient": 0.45,
+      "healMultiplier": 2,
+      "duration": 4,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 DPS"
+        },
+        {
+          "points": 2,
+          "effect": "+15 DPS, +0.5x Heal Multiplier"
+        },
+        {
+          "points": 5,
+          "effect": "+20 DPS, -8s Cooldown"
+        }
+      ]
+    },
+    {
+      "id": "malice",
+      "name": "Malice",
+      "key": "3",
+      "type": "passive",
+      "description": "Your abilities deal bonus damage based on your missing health. The lower your health, the more damage you deal.",
+      "cooldown": 0,
+      "maxBonusDamage": 0.35,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10% Max Bonus Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+10% Max Bonus Damage"
+        },
+        {
+          "points": 5,
+          "effect": "+15% Max Bonus Damage, Also applies to weapon damage"
+        }
+      ]
+    },
+    {
+      "id": "soul_exchange",
+      "name": "Soul Exchange",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Swap health percentages with an enemy hero. You cannot die from this ability.",
+      "cooldown": 130,
+      "minSelfHealth": 0.15,
+      "range": 30,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10m Range"
+        },
+        {
+          "points": 2,
+          "effect": "-30s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "Also stuns target for 1s, removes min health threshold"
+        }
+      ]
+    }
+  ]
+}

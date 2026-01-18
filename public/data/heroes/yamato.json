@@ -1,0 +1,130 @@
+{
+  "id": "yamato",
+  "name": "Yamato",
+  "tags": [
+    "Carry",
+    "Duelist",
+    "Melee"
+  ],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 1,
+    "bulletDamage": 7.2,
+    "fireRate": 7.69,
+    "clipSize": 30,
+    "reloadTime": 2,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 8.2,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "power_slash",
+      "name": "Power Slash",
+      "key": "1",
+      "type": "active",
+      "description": "Charge up and release a powerful sword slash that deals damage in a line. Fully charged slashes deal bonus damage.",
+      "cooldown": 8,
+      "baseDamage": 95,
+      "spiritCoefficient": 0.85,
+      "chargedMultiplier": 1.6,
+      "chargeTime": 0.75,
+      "range": 18,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+35 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+40 Damage, -2s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Charged slash also stuns for 0.75s"
+        }
+      ]
+    },
+    {
+      "id": "crimson_slash",
+      "name": "Crimson Slash",
+      "key": "2",
+      "type": "active",
+      "description": "Dash forward and slash enemies in your path. Grants brief immunity frames during the dash.",
+      "cooldown": 16,
+      "baseDamage": 65,
+      "spiritCoefficient": 0.5,
+      "dashDistance": 16,
+      "invulnDuration": 0.3,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+25 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+5m Dash Distance, -4s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+40 Damage, +1 Charge"
+        }
+      ]
+    },
+    {
+      "id": "flying_strike",
+      "name": "Flying Strike",
+      "key": "3",
+      "type": "active",
+      "description": "Launch into the air and strike down on a target location, dealing damage in an area.",
+      "cooldown": 22,
+      "baseDamage": 100,
+      "spiritCoefficient": 0.9,
+      "radius": 7,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+35 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+35 Damage, +3m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Also slows enemies by 40% for 2.5s"
+        }
+      ]
+    },
+    {
+      "id": "shadow_transformation",
+      "name": "Shadow Transformation",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Transform into a shadow warrior. Gain increased weapon damage, lifesteal, and bullet resistance. Abilities have reduced cooldowns.",
+      "cooldown": 120,
+      "weaponDamageBonus": 0.35,
+      "bulletLifesteal": 0.3,
+      "bulletResist": 0.3,
+      "cooldownReduction": 0.5,
+      "duration": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10% Weapon Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+10% Lifesteal, +2s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+15% Weapon Damage, +10% Bullet Resist"
+        }
+      ]
+    }
+  ]
+}

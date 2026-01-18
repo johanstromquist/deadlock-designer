@@ -1,0 +1,24 @@
+{
+  "name": "deadlock-designer",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "audit": "node scripts/audit-data.js",
+    "audit:items": "node scripts/audit-items.js",
+    "audit:effects": "node scripts/audit-item-effects.js",
+    "update-data": "node scripts/update-data.js",
+    "update-data:apply": "node scripts/update-data.js --apply",
+    "update-items": "node scripts/audit-items.js --update",
+    "update-items:apply": "node scripts/audit-items.js --update --apply",
+    "update-effects": "node scripts/update-item-effects.js",
+    "update-effects:apply": "node scripts/update-item-effects.js --apply",
+    "update-descriptions": "node scripts/update-item-descriptions.js",
+    "update-descriptions:apply": "node scripts/update-item-descriptions.js --apply"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

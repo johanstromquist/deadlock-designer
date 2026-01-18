@@ -1,0 +1,131 @@
+{
+  "id": "mo_and_krill",
+  "name": "Mo & Krill",
+  "tags": [
+    "Tank",
+    "Disabler",
+    "Melee"
+  ],
+  "baseStats": {
+    "health": 900,
+    "healthRegen": 1,
+    "bulletDamage": 45,
+    "fireRate": 1.11,
+    "clipSize": 9,
+    "reloadTime": 1.5,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 8,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "scorn",
+      "name": "Scorn",
+      "key": "1",
+      "type": "active",
+      "description": "Deal damage to nearby enemies and heal for a percentage of damage dealt.",
+      "cooldown": 8,
+      "baseDamage": 70,
+      "spiritCoefficient": 0.7,
+      "healPercent": 0.7,
+      "radius": 9,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+30 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+15% Heal, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+40 Damage, Also reduces enemy healing by 40%"
+        }
+      ]
+    },
+    {
+      "id": "burrow",
+      "name": "Burrow",
+      "key": "2",
+      "type": "active",
+      "description": "Burrow underground, becoming invulnerable and moving faster. Emerge to damage and stun enemies.",
+      "cooldown": 35,
+      "baseDamage": 70,
+      "spiritCoefficient": 0.6,
+      "stunDuration": 1,
+      "burrowDuration": 2.5,
+      "speedBonus": 4,
+      "radius": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+0.5s Stun Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+40 Damage, +1s Burrow Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+60 Damage, Can burrow through walls"
+        }
+      ]
+    },
+    {
+      "id": "sand_blast",
+      "name": "Sand Blast",
+      "key": "3",
+      "type": "active",
+      "description": "Fire a cone of sand that damages enemies and reduces their fire rate.",
+      "cooldown": 22,
+      "baseDamage": 85,
+      "spiritCoefficient": 0.8,
+      "fireRateReduction": 0.4,
+      "debuffDuration": 4,
+      "coneAngle": 60,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+35 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+15% Fire Rate Reduction"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Also silences for 2s"
+        }
+      ]
+    },
+    {
+      "id": "combo",
+      "name": "Combo",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Grab an enemy and deliver a series of devastating attacks, dealing massive damage over time.",
+      "cooldown": 100,
+      "baseDamage": 300,
+      "spiritCoefficient": 2,
+      "duration": 2.5,
+      "range": 5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+75 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+100 Damage, +1m Range"
+        },
+        {
+          "points": 5,
+          "effect": "+150 Damage, -20s Cooldown"
+        }
+      ]
+    }
+  ]
+}

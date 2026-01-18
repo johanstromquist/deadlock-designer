@@ -1,0 +1,125 @@
+{
+  "id": "bebop",
+  "name": "Bebop",
+  "tags": [
+    "Tank",
+    "Disabler",
+    "Support"
+  ],
+  "baseStats": {
+    "health": 850,
+    "healthRegen": 1.5,
+    "bulletDamage": 14,
+    "fireRate": 5.26,
+    "clipSize": 60,
+    "reloadTime": 2.5,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.45,
+    "sprintSpeed": 4,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "exploding_uppercut",
+      "name": "Exploding Uppercut",
+      "key": "1",
+      "type": "active",
+      "description": "Deliver a powerful uppercut that launches enemies into the air and explodes on impact.",
+      "cooldown": 26,
+      "baseDamage": 100,
+      "spiritCoefficient": 1.05,
+      "range": 5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+60 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+60 Damage, +1m Range"
+        },
+        {
+          "points": 5,
+          "effect": "+100 Damage, Uppercut can hit multiple enemies"
+        }
+      ]
+    },
+    {
+      "id": "sticky_bomb",
+      "name": "Sticky Bomb",
+      "key": "2",
+      "type": "active",
+      "description": "Throw a bomb that sticks to surfaces or enemies. Explodes after a delay, dealing damage.",
+      "cooldown": 22,
+      "baseDamage": 125,
+      "spiritCoefficient": 1.1,
+      "delay": 1,
+      "radius": 10,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+60 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+60 Damage, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+80 Damage, +1 Charge"
+        }
+      ]
+    },
+    {
+      "id": "hook",
+      "name": "Hook",
+      "key": "3",
+      "type": "active",
+      "description": "Fire a hook that pulls the first enemy hit towards you.",
+      "cooldown": 27,
+      "baseDamage": 40,
+      "spiritCoefficient": 0.4,
+      "range": 30,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10m Range"
+        },
+        {
+          "points": 2,
+          "effect": "-8s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "Hook can hit multiple enemies"
+        }
+      ]
+    },
+    {
+      "id": "hyper_beam",
+      "name": "Hyper Beam",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Channel a powerful beam that deals heavy damage to all enemies caught in it. Move slowly while channeling.",
+      "cooldown": 130,
+      "baseDamage": 220,
+      "spiritCoefficient": 2.93,
+      "duration": 4.5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+60 DPS"
+        },
+        {
+          "points": 2,
+          "effect": "+60 DPS, +1s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+80 DPS, -40s Cooldown"
+        }
+      ]
+    }
+  ]
+}

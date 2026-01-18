@@ -1,0 +1,130 @@
+{
+  "id": "shiv",
+  "name": "Shiv",
+  "tags": [
+    "Assassin",
+    "Sustain",
+    "Melee"
+  ],
+  "baseStats": {
+    "health": 800,
+    "healthRegen": 2,
+    "bulletDamage": 6.5,
+    "fireRate": 7.69,
+    "clipSize": 28,
+    "reloadTime": 1.8,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.7,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "serrated_knives",
+      "name": "Serrated Knives",
+      "key": "1",
+      "type": "active",
+      "description": "Throw knives in a cone that deal damage and apply bleed. Bleed damage heals Shiv.",
+      "cooldown": 7,
+      "baseDamage": 25,
+      "spiritCoefficient": 0.3,
+      "bleedDamage": 35,
+      "bleedDuration": 4,
+      "healPercent": 0.5,
+      "knives": 5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 Bleed Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+2 Knives, +15% Heal"
+        },
+        {
+          "points": 5,
+          "effect": "+20 Bleed Damage, Bleed also reduces healing by 35%"
+        }
+      ]
+    },
+    {
+      "id": "slice_and_dice",
+      "name": "Slice and Dice",
+      "key": "2",
+      "type": "active",
+      "description": "Dash forward slashing enemies. Can be cast again within a window to dash again.",
+      "cooldown": 25,
+      "baseDamage": 70,
+      "spiritCoefficient": 0.65,
+      "dashDistance": 12,
+      "secondCastWindow": 5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+30 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+5m Dash Distance"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, +1 Additional Dash"
+        }
+      ]
+    },
+    {
+      "id": "bloodletting",
+      "name": "Bloodletting",
+      "key": "3",
+      "type": "passive",
+      "description": "A percentage of damage Shiv deals is converted to rage stacks. Rage stacks increase Shiv's damage.",
+      "cooldown": 0,
+      "damageConversion": 0.08,
+      "ragePerStack": 0.006,
+      "maxStacks": 200,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+0.003 Damage Per Stack"
+        },
+        {
+          "points": 2,
+          "effect": "+2% Damage Conversion"
+        },
+        {
+          "points": 5,
+          "effect": "+0.004 Damage Per Stack, +50 Max Stacks"
+        }
+      ]
+    },
+    {
+      "id": "killing_blow",
+      "name": "Killing Blow",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Dash to an enemy and deal damage based on their missing health. Heals Shiv on kill.",
+      "cooldown": 85,
+      "baseDamage": 100,
+      "spiritCoefficient": 0.8,
+      "missingHealthDamage": 0.35,
+      "healOnKill": 200,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+8% Missing Health Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+50 Base Damage, +100 Heal on Kill"
+        },
+        {
+          "points": 5,
+          "effect": "+12% Missing Health Damage, -20s Cooldown"
+        }
+      ]
+    }
+  ]
+}

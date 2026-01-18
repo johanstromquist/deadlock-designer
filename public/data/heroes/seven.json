@@ -1,0 +1,127 @@
+{
+  "id": "seven",
+  "name": "Seven",
+  "tags": [
+    "Mage",
+    "AOE",
+    "Team Fight"
+  ],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 1,
+    "bulletDamage": 5.4,
+    "fireRate": 10.53,
+    "clipSize": 50,
+    "reloadTime": 2.3,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.7,
+    "sprintSpeed": 0.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "lightning_ball",
+      "name": "Lightning Ball",
+      "key": "1",
+      "type": "active",
+      "description": "Fire a ball of lightning that bounces between enemies, dealing damage to each.",
+      "cooldown": 10,
+      "baseDamage": 45,
+      "spiritCoefficient": 0.5,
+      "bounces": 4,
+      "bounceRange": 14,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+20 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+2 Bounces"
+        },
+        {
+          "points": 5,
+          "effect": "+30 Damage, Enemies hit are slowed by 25% for 2s"
+        }
+      ]
+    },
+    {
+      "id": "static_charge",
+      "name": "Static Charge",
+      "key": "2",
+      "type": "active",
+      "description": "Apply static charge to an enemy or ally. After a delay, the charge explodes, damaging nearby enemies.",
+      "cooldown": 26,
+      "baseDamage": 105,
+      "spiritCoefficient": 1,
+      "delay": 3,
+      "radius": 10,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+40 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+50 Damage, +3m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+60 Damage, -1s Delay, Also stuns for 0.75s"
+        }
+      ]
+    },
+    {
+      "id": "power_surge",
+      "name": "Power Surge",
+      "key": "3",
+      "type": "active",
+      "description": "Gain bullet lifesteal and increased fire rate for a duration.",
+      "cooldown": 35,
+      "bulletLifesteal": 0.3,
+      "fireRateBonus": 0.25,
+      "duration": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10% Bullet Lifesteal"
+        },
+        {
+          "points": 2,
+          "effect": "+10% Fire Rate, +3s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+15% Bullet Lifesteal, Also grants +20% move speed"
+        }
+      ]
+    },
+    {
+      "id": "storm_cloud",
+      "name": "Storm Cloud",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Channel to create an expanding storm that damages all enemies inside. Seven can move slowly while channeling.",
+      "cooldown": 160,
+      "baseDamage": 55,
+      "spiritCoefficient": 1.3,
+      "duration": 5,
+      "maxRadius": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 DPS"
+        },
+        {
+          "points": 2,
+          "effect": "+20 DPS, +1.5s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+25 DPS, +30% Move Speed while channeling"
+        }
+      ]
+    }
+  ]
+}

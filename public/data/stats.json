@@ -1,0 +1,48 @@
+{
+  "statDefinitions": {
+    "health": { "name": "Health", "format": "number", "group": "survivability" },
+    "healthRegen": { "name": "Health Regen", "format": "perSecond", "group": "survivability" },
+    "bulletResist": { "name": "Bullet Resist", "format": "percent", "group": "survivability" },
+    "spiritResist": { "name": "Spirit Resist", "format": "percent", "group": "survivability" },
+    "moveSpeed": { "name": "Move Speed", "format": "mps", "group": "mobility" },
+    "sprintSpeed": { "name": "Sprint Speed", "format": "mps", "group": "mobility" },
+    "stamina": { "name": "Stamina", "format": "number", "group": "mobility" },
+    "bulletDamage": { "name": "Bullet Damage", "format": "number", "group": "weapon" },
+    "weaponDamage": { "name": "Weapon Damage", "format": "percent", "group": "weapon" },
+    "fireRate": { "name": "Fire Rate", "format": "perSecond", "group": "weapon" },
+    "clipSize": { "name": "Ammo", "format": "number", "group": "weapon" },
+    "reloadTime": { "name": "Reload Time", "format": "seconds", "group": "weapon" },
+    "bulletLifesteal": { "name": "Bullet Lifesteal", "format": "percent", "group": "weapon" },
+    "spiritPower": { "name": "Spirit Power", "format": "number", "group": "spirit" },
+    "spiritLifesteal": { "name": "Spirit Lifesteal", "format": "percent", "group": "spirit" },
+    "cooldownReduction": { "name": "Cooldown Reduction", "format": "percent", "group": "spirit" },
+    "abilityRange": { "name": "Ability Range", "format": "percent", "group": "spirit" }
+  },
+  "derivedStats": {
+    "dps": {
+      "name": "DPS",
+      "formula": "bulletDamage * (1 + weaponDamage) * fireRate"
+    },
+    "effectiveHealth": {
+      "name": "Effective Health",
+      "formula": "health / (1 - bulletResist)"
+    },
+    "burstDamage": {
+      "name": "Burst Damage",
+      "formula": "bulletDamage * (1 + weaponDamage) * clipSize"
+    }
+  },
+  "baseStatDefaults": {
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7,
+    "sprintSpeed": 11.5,
+    "stamina": 3,
+    "weaponDamage": 0,
+    "bulletLifesteal": 0,
+    "spiritPower": 0,
+    "spiritLifesteal": 0,
+    "cooldownReduction": 0,
+    "abilityRange": 0
+  }
+}

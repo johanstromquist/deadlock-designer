@@ -1,0 +1,129 @@
+{
+  "id": "infernus",
+  "name": "Infernus",
+  "tags": [
+    "Carry",
+    "Mage",
+    "DoT"
+  ],
+  "baseStats": {
+    "health": 800,
+    "healthRegen": 2,
+    "bulletDamage": 5.8,
+    "fireRate": 9.52,
+    "clipSize": 20,
+    "reloadTime": 1.9,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.7,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "catalyst",
+      "name": "Catalyst",
+      "key": "1",
+      "type": "active",
+      "description": "Deal damage to an enemy and apply a debuff. If the enemy takes enough damage while debuffed, they explode.",
+      "cooldown": 25,
+      "baseDamage": 75,
+      "spiritCoefficient": 0.75,
+      "explosionThreshold": 140,
+      "explosionDamage": 100,
+      "duration": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+30 Damage, +50 Threshold Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+50 Explosion Damage"
+        },
+        {
+          "points": 5,
+          "effect": "+75 Explosion Damage, Explosion splashes to nearby enemies"
+        }
+      ]
+    },
+    {
+      "id": "flame_dash",
+      "name": "Flame Dash",
+      "key": "2",
+      "type": "active",
+      "description": "Dash forward, leaving a trail of flames that damages enemies.",
+      "cooldown": 14,
+      "baseDamage": 35,
+      "spiritCoefficient": 0.4,
+      "range": 15,
+      "trailDuration": 3,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+20 Trail DPS"
+        },
+        {
+          "points": 2,
+          "effect": "+5m Dash Distance"
+        },
+        {
+          "points": 5,
+          "effect": "+1 Charge, Trail also slows by 25%"
+        }
+      ]
+    },
+    {
+      "id": "afterburn",
+      "name": "Afterburn",
+      "key": "3",
+      "type": "passive",
+      "description": "Your bullets apply burn, dealing damage over time to enemies hit.",
+      "cooldown": 0,
+      "burnDPS": 4,
+      "spiritCoefficient": 0.12,
+      "burnDuration": 4,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+1.5 Burn DPS"
+        },
+        {
+          "points": 2,
+          "effect": "+2 Burn DPS, +1s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+3 Burn DPS, Burning enemies take +15% spirit damage"
+        }
+      ]
+    },
+    {
+      "id": "concussive_combustion",
+      "name": "Concussive Combustion",
+      "key": "4",
+      "type": "ultimate",
+      "description": "After a delay, create a massive explosion around you that deals heavy damage and stuns enemies.",
+      "cooldown": 120,
+      "baseDamage": 280,
+      "spiritCoefficient": 2.1,
+      "chargeTime": 1.5,
+      "stunDuration": 0.8,
+      "radius": 16,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+80 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+80 Damage, +0.3s Stun"
+        },
+        {
+          "points": 5,
+          "effect": "+120 Damage, -0.5s Charge Time, -25s Cooldown"
+        }
+      ]
+    }
+  ]
+}

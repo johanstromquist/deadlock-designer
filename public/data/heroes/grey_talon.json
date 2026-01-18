@@ -1,0 +1,126 @@
+{
+  "id": "grey_talon",
+  "name": "Grey Talon",
+  "tags": [
+    "Carry",
+    "Assassin",
+    "Ranged"
+  ],
+  "baseStats": {
+    "health": 750,
+    "healthRegen": 1.5,
+    "bulletDamage": 16,
+    "fireRate": 8.57,
+    "clipSize": 44,
+    "reloadTime": 2.1,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.3,
+    "sprintSpeed": 1.6,
+    "stamina": 4
+  },
+  "abilities": [
+    {
+      "id": "charged_shot",
+      "name": "Charged Shot",
+      "key": "1",
+      "type": "active",
+      "description": "Charge up a powerful shot that deals bonus damage based on charge time. Fully charged shots pierce enemies.",
+      "cooldown": 8,
+      "baseDamage": 105,
+      "spiritCoefficient": 0.65,
+      "maxChargeTime": 1,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+35 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+35 Damage, -2s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Fully charged shots stun for 0.75s"
+        }
+      ]
+    },
+    {
+      "id": "rain_of_arrows",
+      "name": "Rain of Arrows",
+      "key": "2",
+      "type": "active",
+      "description": "Call down a barrage of arrows in a target area, damaging and slowing enemies.",
+      "cooldown": 32,
+      "baseDamage": 45,
+      "spiritCoefficient": 0.35,
+      "duration": 3,
+      "slowPercent": 0.2,
+      "radius": 12,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 DPS, +5% Slow"
+        },
+        {
+          "points": 2,
+          "effect": "+15 DPS, +3m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+25 DPS, Gain +30% Fire Rate in area"
+        }
+      ]
+    },
+    {
+      "id": "immobilizing_trap",
+      "name": "Immobilizing Trap",
+      "key": "3",
+      "type": "active",
+      "description": "Place a trap that roots the first enemy to trigger it. Reveals the trapped enemy.",
+      "cooldown": 30,
+      "rootDuration": 1.5,
+      "revealDuration": 10,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+0.5s Root Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+1 Trap Charge"
+        },
+        {
+          "points": 5,
+          "effect": "Traps also disarm for 4s"
+        }
+      ]
+    },
+    {
+      "id": "guided_owl",
+      "name": "Guided Owl",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Launch a controllable owl that explodes on impact, dealing massive damage in an area. Can fly anywhere on the map.",
+      "cooldown": 130,
+      "baseDamage": 300,
+      "spiritCoefficient": 2,
+      "radius": 10,
+      "speed": 45,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+100 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+100 Damage, +4m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+150 Damage, Owl stuns for 1s"
+        }
+      ]
+    }
+  ]
+}

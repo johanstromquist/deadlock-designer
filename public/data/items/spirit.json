@@ -1,0 +1,444 @@
+{
+  "category": "spirit",
+  "items": [
+    {
+      "id": "extra_spirit",
+      "name": "Extra Spirit",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "spiritPower": 10
+      },
+      "passive": null
+    },
+    {
+      "id": "mystic_expansion",
+      "name": "Mystic Expansion",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "abilityRange": 0.16
+      },
+      "passive": null
+    },
+    {
+      "id": "extra_charge",
+      "name": "Extra Charge",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "abilityCharges": 1
+      },
+      "passive": null
+    },
+    {
+      "id": "mystic_burst",
+      "name": "Mystic Burst",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "spiritPower": 4
+      },
+      "passive": {
+        "description": "Charges up over time with bonus spirit damage, causing abilities dealing more than 80 damage to deal additional damage.",
+        "spiritDamage": 40,
+        "cooldown": 14
+      }
+    },
+    {
+      "id": "spirit_strike",
+      "name": "Spirit Strike",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "spiritPower": 5
+      },
+      "passive": {
+        "description": "When you perform a Light or Heavy Melee attack against a hero, deal extra Spirit Damage with the attack and reduce the target's Spirit Resist.Cooldown is 2x longer for Light Melee hits.",
+        "meleeSpiritDamage": 60,
+        "cooldown": 8,
+        "duration": 6
+      }
+    },
+    {
+      "id": "mystic_regeneration",
+      "name": "Mystic Regeneration",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "spiritPower": 5,
+        "healthRegen": 2
+      },
+      "passive": {
+        "description": "Dealing Spirit Damage to enemy Heroes grants you Bonus Health Regen. Stacks when dealing damage to different heroes."
+      }
+    },
+    {
+      "id": "duration_extender",
+      "name": "Duration Extender",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "abilityDuration": 0.18,
+        "spiritPower": 5
+      },
+      "passive": null
+    },
+    {
+      "id": "arcane_surge",
+      "name": "Arcane Surge",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 9
+      },
+      "passive": {
+        "description": "When you Dash-Jump the next ability you use will have bonus Range, Duration, and Spirit Power. Lasts up to 7s.",
+        "spiritBonus": 10,
+        "duration": 7
+      }
+    },
+    {
+      "id": "slowing_hex",
+      "name": "Slowing Hex",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 5
+      },
+      "active": {
+        "description": "Slows movement of enemy target. Also Silences their movement-based items and abilities.Does not affect target's stamina usage.",
+        "slowPercent": 0.2,
+        "cooldown": 30,
+        "duration": 3.5,
+        "range": 25
+      }
+    },
+    {
+      "id": "compress_cooldown",
+      "name": "Compress Cooldown",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "cooldownReduction": 0.12,
+        "spiritPower": 4
+      },
+      "passive": null
+    },
+    {
+      "id": "mystic_vulnerability",
+      "name": "Mystic Vulnerability",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 6
+      },
+      "passive": {
+        "description": "When the target takes Spirit Damage, they have their Spirit Resist reduced.",
+        "spiritResistReduction": 0.14,
+        "duration": 7
+      }
+    },
+    {
+      "id": "mystic_slow",
+      "name": "Mystic Slow",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 6,
+        "health": 30
+      },
+      "passive": {
+        "description": "When the target takes Spirit Damage, they have their Move Speed reduced.",
+        "slowPercent": 0.3,
+        "duration": 2
+      }
+    },
+    {
+      "id": "bullet_resist_shredder",
+      "name": "Bullet Resist Shredder",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 6,
+        "health": 65
+      },
+      "passive": {
+        "description": "Reduces Bullet Resist on enemies when you deal Spirit Damage.",
+        "duration": 8
+      }
+    },
+    {
+      "id": "quicksilver_reload",
+      "name": "Quicksilver Reload",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 7,
+        "fireRate": 0.1
+      },
+      "passive": {
+        "description": "Your imbued ability charges up over time with bonus spirit damage, bonus fire rate, and bonus bullets on use.",
+        "ammoReload": 0.35,
+        "cooldown": 18
+      }
+    },
+    {
+      "id": "cold_front",
+      "name": "Cold Front",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 6,
+        "health": 75
+      },
+      "active": {
+        "description": "Release an expanding ice blast that deals Spirit Damage and Slows targets it hits.",
+        "slowPercent": 0.3,
+        "cooldown": 25,
+        "duration": 4
+      }
+    },
+    {
+      "id": "superior_cooldown",
+      "name": "Superior Cooldown",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "cooldownReduction": 0.24,
+        "spiritPower": 9
+      },
+      "passive": null
+    },
+    {
+      "id": "superior_duration",
+      "name": "Superior Duration",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "abilityDuration": 0.28,
+        "spiritPower": 9
+      },
+      "passive": null
+    },
+    {
+      "id": "tankbuster",
+      "name": "Tankbuster",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "spiritPower": 10,
+        "health": 50
+      },
+      "passive": {
+        "description": "Charges up over time with bonus spirit damage, causing abilities dealing more than 165 damage to deal additional damage. Ignores Spirit Resistance.",
+        "cooldown": 14
+      }
+    },
+    {
+      "id": "surge_of_power",
+      "name": "Surge of Power",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "spiritPower": 5,
+        "moveSpeed": 1.75
+      },
+      "passive": {
+        "description": "Imbue an ability with permanent Spirit Power. When that ability is used, gain bonus Move Speed and maintain full speed while attacking.",
+        "spiritBonus": 35,
+        "cooldown": 14
+      }
+    },
+    {
+      "id": "rapid_recharge",
+      "name": "Rapid Recharge",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "cooldownReduction": 0.18,
+        "spiritPower": 7
+      },
+      "passive": null
+    },
+    {
+      "id": "disarming_hex",
+      "name": "Disarming Hex",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "spiritPower": 8,
+        "health": 75
+      },
+      "active": {
+        "description": "Disarms enemy target and reduces their Bullet Resist.",
+        "cooldown": 20,
+        "duration": 4,
+        "range": 32
+      }
+    },
+    {
+      "id": "escalating_exposure",
+      "name": "Escalating Exposure",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 14
+      },
+      "passive": {
+        "description": "Dealing Spirit Damage applies a stacking Spirit Amp that increases your Spirit Damage to the target.",
+        "maxStacks": 5,
+        "duration": 12
+      }
+    },
+    {
+      "id": "mercurial_magnum",
+      "name": "Mercurial Magnum",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 7,
+        "weaponDamage": 0.12,
+        "clipSize": 20,
+        "fireRate": 0.25
+      },
+      "passive": {
+        "description": "Your imbued ability charges up over time with bonus spirit damage, bonus fire rate, and reloads bullets on use. Until your next reload, your bullets deal bonus Spirit Damage based on your Spirit Power.",
+        "cooldown": 15
+      }
+    },
+    {
+      "id": "focus_lens",
+      "name": "Focus Lens",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 20,
+        "fireRate": 0.13
+      },
+      "active": {
+        "description": "Target an enemy to Silence them. A portion of all damage dealt during the silence gets applied to the target when the silence wears off.",
+        "cooldown": 45,
+        "duration": 4,
+        "range": 20
+      }
+    },
+    {
+      "id": "scourge",
+      "name": "Scourge",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 14,
+        "health": 100
+      },
+      "active": {
+        "description": "Apply Spirit Resistance and an aura on a friendly target that deals damage to enemies proportional to their max health. Can be self cast.",
+        "cooldown": 35,
+        "duration": 10,
+        "range": 35
+      }
+    },
+    {
+      "id": "vortex_web",
+      "name": "Vortex Web",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 12
+      },
+      "active": {
+        "description": "Throw a vacuum grenade, pulling all enemies into a small area and applying Slowing Hex.",
+        "duration": 4,
+        "cooldown": 42,
+        "slowPercent": 0.35
+      }
+    },
+    {
+      "id": "arctic_blast",
+      "name": "Arctic Blast",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 15,
+        "health": 150
+      },
+      "active": {
+        "description": "Release an expanding ice blast that deals Spirit Damage, Freezing and then Slowing targets it hits. Targets take increased damage while frozen.",
+        "cooldown": 24,
+        "slowPercent": 0.6
+      }
+    },
+    {
+      "id": "boundless_spirit",
+      "name": "Boundless Spirit",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 35,
+        "health": 75
+      },
+      "passive": null
+    },
+    {
+      "id": "echo_shard",
+      "name": "Echo Shard",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 15,
+        "fireRate": 0.05
+      },
+      "active": {
+        "description": "Reset the cooldown of the imbued non-ultimate ability.",
+        "cooldown": 30
+      }
+    },
+    {
+      "id": "refresher",
+      "name": "Refresher",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 12,
+        "cooldownReduction": 0.1
+      },
+      "active": {
+        "description": "Reset the cooldown of all your abilities and restore all your charges.",
+        "cooldown": 300
+      }
+    },
+    {
+      "id": "curse",
+      "name": "Curse",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 12,
+        "weaponDamage": 0.15
+      },
+      "active": {
+        "description": "Curses an enemy - interrupting, Silencing, Disarming, and preventing item usage. Removes all non-ultimate buffs.",
+        "cooldown": 55,
+        "duration": 3.25,
+        "range": 20
+      }
+    },
+    {
+      "id": "magic_carpet",
+      "name": "Magic Carpet",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 14,
+        "sprintSpeed": 3,
+        "health": 75
+      },
+      "active": {
+        "description": "Summon a Magic Carpet that will fly you away. While flying you are immune to slows and doing any action will dismiss the carpet. Cannot use abilities while the carpet is being summoned.",
+        "duration": 8,
+        "cooldown": 32
+      }
+    }
+  ]
+}

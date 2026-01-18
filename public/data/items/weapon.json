@@ -1,0 +1,448 @@
+{
+  "category": "weapon",
+  "items": [
+    {
+      "id": "extended_magazine",
+      "name": "Extended Magazine",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "clipSize": 30,
+        "weaponDamage": 0.06
+      },
+      "passive": null
+    },
+    {
+      "id": "close_quarters",
+      "name": "Close Quarters",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "weaponDamage": 0.25
+      },
+      "passive": {
+        "description": "Deal additional Weapon Damage when in close range to your target.",
+        "condition": "close_range"
+      }
+    },
+    {
+      "id": "headshot_booster",
+      "name": "Headshot Booster",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "weaponDamage": 0.05,
+        "health": 30
+      },
+      "passive": {
+        "description": "Your next headshot against an enemy Hero deals bonus weapon damage.",
+        "headshotBonus": 40,
+        "cooldown": 9
+      }
+    },
+    {
+      "id": "high_velocity_rounds",
+      "name": "High-Velocity Rounds",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "bulletVelocity": 0.5,
+        "weaponDamage": 0.08,
+        "fireRate": 0.05
+      },
+      "passive": null
+    },
+    {
+      "id": "restorative_shot",
+      "name": "Restorative Shot",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "weaponDamage": 0.06
+      },
+      "passive": {
+        "description": "Your next bullet will heal you based on what target you hit.",
+        "healAmount": 35,
+        "cooldown": 6,
+        "radius": 1
+      }
+    },
+    {
+      "id": "monster_rounds",
+      "name": "Monster Rounds",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "weaponDamage": 0.15
+      },
+      "passive": {
+        "description": "+30% damage to non-heroes",
+        "condition": "vs_npcs"
+      }
+    },
+    {
+      "id": "rapid_rounds",
+      "name": "Rapid Rounds",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "fireRate": 0.1
+      },
+      "passive": null
+    },
+    {
+      "id": "active_reload",
+      "name": "Active Reload",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "weaponDamage": 0.1,
+        "clipSize": 20,
+        "fireRate": 0.25,
+        "moveSpeed": 0.75
+      },
+      "passive": {
+        "description": "While reloading, pressing {g:citadel_binding:'Reload'} during the highlighted portion will instantly finish your reload and grant you Fire Rate, Bullet Lifesteal and Move Speed.",
+        "fireRateBonus": 0.2,
+        "cooldown": 12,
+        "duration": 7
+      }
+    },
+    {
+      "id": "swift_striker",
+      "name": "Swift Striker",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "fireRate": 0.2
+      },
+      "passive": null
+    },
+    {
+      "id": "mystic_shot",
+      "name": "Mystic Shot",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "weaponDamage": 0.08
+      },
+      "passive": {
+        "description": "Your next bullet deals bonus Spirit Damage.",
+        "spiritDamage": 40,
+        "cooldown": 8,
+        "radius": 1
+      }
+    },
+    {
+      "id": "fleetfoot",
+      "name": "Fleetfoot",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "weaponDamage": 0.08
+      },
+      "active": {
+        "description": "Removes the Move Speed penalty while shooting.",
+        "moveSpeed": 3,
+        "cooldown": 16,
+        "duration": 5
+      }
+    },
+    {
+      "id": "weakening_headshot",
+      "name": "Weakening Headshot",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "weaponDamage": 0.1,
+        "health": 50,
+        "bulletResist": -0.13
+      },
+      "passive": {
+        "description": "Landing a Headshot on Heroes reduces their Bullet Resist.",
+        "damageReduction": 0.2
+      }
+    },
+    {
+      "id": "intensifying_magazine",
+      "name": "Intensifying Magazine",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "clipSize": 20,
+        "weaponDamage": 0.1
+      },
+      "passive": {
+        "description": "Increases Weapon Damage as you continuously fire your weapon.",
+        "maxBonus": 0.5
+      }
+    },
+    {
+      "id": "long_range",
+      "name": "Long Range",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "weaponDamage": 0.12
+      },
+      "passive": {
+        "description": "Deal additional Weapon Damage when beyond a minimum distance from your target.",
+        "condition": "long_range"
+      }
+    },
+    {
+      "id": "melee_charge",
+      "name": "Melee Charge",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "weaponDamage": 0.15
+      },
+      "passive": {
+        "description": "Your next Heavy Melee attack against an enemy deals increased damage.",
+        "meleeDamage": 100,
+        "cooldown": 7
+      }
+    },
+    {
+      "id": "point_blank",
+      "name": "Point Blank",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "weaponDamage": 0.35,
+        "health": 75
+      },
+      "passive": {
+        "description": "When in close range to your target, gain Weapon Damage and your bullets apply a Movement Slow.",
+        "condition": "close_range",
+        "slowPercent": 0.25
+      }
+    },
+    {
+      "id": "burst_fire",
+      "name": "Burst Fire",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "weaponDamage": 0.14,
+        "fireRate": 0.1,
+        "moveSpeed": 1.25
+      },
+      "passive": {
+        "description": "Briefly gain Fire Rate and Move Speed when one of your bullets hits an enemy hero.",
+        "extraRounds": 1,
+        "cooldown": 7,
+        "duration": 3.5
+      }
+    },
+    {
+      "id": "tesla_bullets",
+      "name": "Tesla Bullets",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "weaponDamage": 0.1,
+        "fireRate": 0.08
+      },
+      "passive": {
+        "description": "Your bullets have a chance to shock your target. The shock will jump to a nearby enemy.",
+        "spiritDamage": 40
+      }
+    },
+    {
+      "id": "express_shot",
+      "name": "Express Shot",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "weaponDamage": 0.14,
+        "bulletVelocity": 0.5,
+        "fireRate": 0.05
+      },
+      "passive": {
+        "description": "Your next attack will fire twice in quick succession with increased damage and velocity. This attack consumes extra ammo.",
+        "cooldown": 8
+      }
+    },
+    {
+      "id": "headhunter",
+      "name": "Headhunter",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "weaponDamage": 0.05,
+        "health": 50,
+        "moveSpeed": 1.75
+      },
+      "passive": {
+        "description": "Your next headshot against an enemy Hero deals bonus weapon damage, heal you, and briefly grants bonus move speed.",
+        "headshotBonus": 100,
+        "cooldown": 8
+      }
+    },
+    {
+      "id": "hollow_point",
+      "name": "Hollow Point",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "weaponDamage": 0.35,
+        "health": 125
+      },
+      "passive": {
+        "description": "When you are above 65% health, deal additional Weapon Damage and your bullets reduce enemy Bullet Resist.",
+        "condition": "high_health"
+      }
+    },
+    {
+      "id": "cultist_sacrifice",
+      "name": "Cultist Sacrifice",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "weaponDamage": 0.08,
+        "health": 50
+      },
+      "active": {
+        "description": "Target an enemy NPC and consume it for 150% Bonus Souls and grants a powerful long lasting buff.",
+        "cooldown": 270,
+        "duration": 160,
+        "range": 7
+      }
+    },
+    {
+      "id": "heroic_aura",
+      "name": "Heroic Aura",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "fireRate": 0.3,
+        "bulletResist": 0.15
+      },
+      "active": {
+        "description": "Provides Bullet Resist to nearby friendly units.",
+        "duration": 7,
+        "radius": 30,
+        "cooldown": 25
+      }
+    },
+    {
+      "id": "crippling_headshot",
+      "name": "Crippling Headshot",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.22,
+        "health": 125,
+        "bulletResist": -0.16
+      },
+      "passive": {
+        "description": "Landing a Headshot on Heroes will reduce their Bullet and Spirit Resist and applies Healing Reduction.",
+        "slowPercent": 0.4
+      }
+    },
+    {
+      "id": "capacitor",
+      "name": "Capacitor",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.2,
+        "spiritPower": 15,
+        "fireRate": 0.05
+      },
+      "active": {
+        "description": "Your bullets have a chance to shock your target. The shock will jump to a nearby enemy.",
+        "cooldown": 50
+      }
+    },
+    {
+      "id": "lucky_shot",
+      "name": "Lucky Shot",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.2,
+        "clipSize": 40
+      },
+      "passive": {
+        "description": "Your bullets have a chance to be empowered, causing them to deal bonus weapon damage on hit.Bonus damage cannot Crit.",
+        "critChance": 0.25,
+        "critMultiplier": 1.4,
+        "radius": 1
+      }
+    },
+    {
+      "id": "crushing_fists",
+      "name": "Crushing Fists",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.18,
+        "health": 150,
+        "bulletResist": -0.04
+      },
+      "passive": {
+        "description": "Your next Heavy Melee attack against an enemy deals increased damage.",
+        "cooldown": 7
+      }
+    },
+    {
+      "id": "spellslinger",
+      "name": "Spellslinger",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.15,
+        "spiritPower": 20,
+        "fireRate": 0.12
+      },
+      "passive": {
+        "description": "While in-combat whenever you cast an ability or item, gain a stacking buff that improves fire rate and reload speed. Each stack refreshes the duration."
+      }
+    },
+    {
+      "id": "armor_piercing_rounds",
+      "name": "Armor Piercing Rounds",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.25,
+        "bulletVelocity": 0.5
+      },
+      "passive": {
+        "description": "Your Bullets have a chance to become unavoidable, piercing through enemies and ignoring their Bullet Resistance."
+      }
+    },
+    {
+      "id": "shadow_weave",
+      "name": "Shadow Weave",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.2,
+        "spiritPower": 8
+      },
+      "active": {
+        "description": "Become Stealthed. Whenever you take damage while Stealthed you get briefly revealed.",
+        "duration": 18,
+        "cooldown": 32
+      }
+    },
+    {
+      "id": "silencer",
+      "name": "Silencer",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "weaponDamage": 0.2
+      },
+      "passive": {
+        "description": "Your bullets reduce the target's outgoing spirit damage.",
+        "threshold": 15,
+        "silenceDuration": 2.5
+      }
+    }
+  ]
+}

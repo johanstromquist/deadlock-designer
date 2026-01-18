@@ -1,0 +1,130 @@
+{
+  "id": "paradox",
+  "name": "Paradox",
+  "tags": [
+    "Mage",
+    "Disabler",
+    "Burst"
+  ],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 1,
+    "bulletDamage": 48,
+    "fireRate": 1.85,
+    "clipSize": 11,
+    "reloadTime": 1.5,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.7,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "pulse_grenade",
+      "name": "Pulse Grenade",
+      "key": "1",
+      "type": "active",
+      "description": "Throw a grenade that creates a time bubble, slowing enemies inside.",
+      "cooldown": 26,
+      "baseDamage": 75,
+      "spiritCoefficient": 0.65,
+      "slowPercent": 0.35,
+      "duration": 3.5,
+      "radius": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+30 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+1s Duration, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Also silences enemies inside"
+        }
+      ]
+    },
+    {
+      "id": "time_wall",
+      "name": "Time Wall",
+      "key": "2",
+      "type": "active",
+      "description": "Create a wall that stops projectiles and slows enemies passing through.",
+      "cooldown": 35,
+      "slowPercent": 0.4,
+      "slowDuration": 2,
+      "wallDuration": 6,
+      "wallWidth": 18,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+2s Wall Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+10% Slow, +1s Slow Duration"
+        },
+        {
+          "points": 5,
+          "effect": "Passing through wall also stuns for 0.75s"
+        }
+      ]
+    },
+    {
+      "id": "kinetic_carbine",
+      "name": "Kinetic Carbine",
+      "key": "3",
+      "type": "active",
+      "description": "Charge up and fire a powerful shot that deals damage and swaps positions with the target.",
+      "cooldown": 18,
+      "baseDamage": 90,
+      "spiritCoefficient": 0.85,
+      "chargeTime": 0.5,
+      "range": 35,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+40 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "-5s Cooldown, +10m Range"
+        },
+        {
+          "points": 5,
+          "effect": "+60 Damage, Target is also time-locked for 1.5s"
+        }
+      ]
+    },
+    {
+      "id": "paradoxical_swap",
+      "name": "Paradoxical Swap",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Mark a target. After a delay, swap positions and deal damage based on distance traveled.",
+      "cooldown": 120,
+      "baseDamage": 150,
+      "spiritCoefficient": 1.5,
+      "distanceMultiplier": 3,
+      "delay": 2.5,
+      "range": 50,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+50 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+100 Damage, +15m Range"
+        },
+        {
+          "points": 5,
+          "effect": "+1.5 Distance Multiplier, -30s Cooldown"
+        }
+      ]
+    }
+  ]
+}

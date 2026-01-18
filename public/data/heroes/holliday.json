@@ -1,0 +1,140 @@
+{
+  "id": "holliday",
+  "name": "Holliday",
+  "tags": [
+    "Carry",
+    "Gunner",
+    "Ranged"
+  ],
+  "baseStats": {
+    "health": 750,
+    "healthRegen": 1,
+    "bulletDamage": 19,
+    "fireRate": 3.85,
+    "clipSize": 16,
+    "reloadTime": 1.6,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 8.2,
+    "sprintSpeed": 1.6,
+    "stamina": 2
+  },
+  "abilities": [
+    {
+      "id": "weighted_dice",
+      "name": "Weighted Dice",
+      "key": "1",
+      "type": "active",
+      "description": "Roll dice to determine a random buff. Higher rolls give better buffs.",
+      "cooldown": 15,
+      "duration": 12,
+      "buffs": [
+        {
+          "roll": "1-2",
+          "effect": "+10% Fire Rate"
+        },
+        {
+          "roll": "3-4",
+          "effect": "+15% Weapon Damage"
+        },
+        {
+          "roll": "5-6",
+          "effect": "+20% Move Speed"
+        },
+        {
+          "roll": "Double",
+          "effect": "All buffs at once"
+        }
+      ],
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "Increased chance of high rolls"
+        },
+        {
+          "points": 2,
+          "effect": "+4s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "Rolling double also heals for 150"
+        }
+      ]
+    },
+    {
+      "id": "smoke_screen",
+      "name": "Smoke Screen",
+      "key": "2",
+      "type": "active",
+      "description": "Create a smoke screen that blocks vision. Holliday can see through the smoke.",
+      "cooldown": 30,
+      "duration": 6,
+      "radius": 12,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+2s Duration, +3m Radius"
+        },
+        {
+          "points": 2,
+          "effect": "-8s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "Gain invisibility for 3s when entering smoke"
+        }
+      ]
+    },
+    {
+      "id": "quick_draw",
+      "name": "Quick Draw",
+      "key": "3",
+      "type": "active",
+      "description": "Instantly fire a shot that deals bonus damage. If it hits, reduce the cooldown.",
+      "cooldown": 12,
+      "baseDamage": 95,
+      "spiritCoefficient": 0.7,
+      "hitCooldownRefund": 0.6,
+      "range": 40,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+35 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+40 Damage, +15% Cooldown Refund"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Headshots deal 2x damage"
+        }
+      ]
+    },
+    {
+      "id": "high_noon",
+      "name": "High Noon",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Mark all visible enemies. After a channel, fire at all marked enemies dealing massive damage.",
+      "cooldown": 140,
+      "baseDamage": 250,
+      "spiritCoefficient": 1.8,
+      "chargeTime": 2,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+75 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+100 Damage, -0.5s Charge Time"
+        },
+        {
+          "points": 5,
+          "effect": "+125 Damage, -30s Cooldown"
+        }
+      ]
+    }
+  ]
+}

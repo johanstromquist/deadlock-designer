@@ -1,0 +1,57 @@
+{
+  "abilityUnlocks": {
+    "ability1": 0,
+    "ability2": 600,
+    "ability3": 1200,
+    "ultimate": 2100
+  },
+  "abilityUpgradeCosts": {
+    "tier1": 1,
+    "tier2": 2,
+    "tier3": 5
+  },
+  "abilityPointMilestones": [
+    { "souls": 0, "points": 1 },
+    { "souls": 1000, "points": 2 },
+    { "souls": 2500, "points": 3 },
+    { "souls": 4000, "points": 4 },
+    { "souls": 6000, "points": 5 },
+    { "souls": 8000, "points": 6 },
+    { "souls": 10000, "points": 7 },
+    { "souls": 13000, "points": 8 },
+    { "souls": 16000, "points": 9 },
+    { "souls": 20000, "points": 10 }
+  ],
+  "itemTiers": {
+    "1": { "minCost": 500, "maxCost": 500 },
+    "2": { "minCost": 1250, "maxCost": 1250 },
+    "3": { "minCost": 3000, "maxCost": 3500 },
+    "4": { "minCost": 6200, "maxCost": 6300 }
+  },
+  "investmentTrackBonuses": {
+    "weapon": [
+      { "threshold": 500, "bonus": { "weaponDamage": 0.04 } },
+      { "threshold": 1250, "bonus": { "weaponDamage": 0.06 } },
+      { "threshold": 3000, "bonus": { "weaponDamage": 0.08 } },
+      { "threshold": 6200, "bonus": { "weaponDamage": 0.10 } }
+    ],
+    "vitality": [
+      { "threshold": 500, "bonus": { "health": 50 } },
+      { "threshold": 1250, "bonus": { "health": 75 } },
+      { "threshold": 3000, "bonus": { "health": 100 } },
+      { "threshold": 6200, "bonus": { "health": 150 } }
+    ],
+    "spirit": [
+      { "threshold": 500, "bonus": { "spiritPower": 4 } },
+      { "threshold": 1250, "bonus": { "spiritPower": 8 } },
+      { "threshold": 3000, "bonus": { "spiritPower": 12 } },
+      { "threshold": 6200, "bonus": { "spiritPower": 16 } }
+    ]
+  },
+  "flexSlotUnlocks": {
+    "slot1": "urn",
+    "slot2": "mid_boss",
+    "slot3": "guardian",
+    "slot4": "shrine"
+  }
+}

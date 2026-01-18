@@ -1,0 +1,130 @@
+{
+  "id": "mcginnis",
+  "name": "McGinnis",
+  "tags": [
+    "Support",
+    "Engineer",
+    "Zone Control"
+  ],
+  "baseStats": {
+    "health": 750,
+    "healthRegen": 2,
+    "bulletDamage": 13,
+    "fireRate": 8.33,
+    "clipSize": 64,
+    "reloadTime": 2.5,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.7,
+    "sprintSpeed": 1.6,
+    "stamina": 2
+  },
+  "abilities": [
+    {
+      "id": "mini_turret",
+      "name": "Mini Turret",
+      "key": "1",
+      "type": "active",
+      "description": "Deploy a turret that automatically attacks nearby enemies. Limited turrets can be active at once.",
+      "cooldown": 8,
+      "baseDamage": 22,
+      "spiritCoefficient": 0.4,
+      "turretHealth": 175,
+      "turretDuration": 30,
+      "maxTurrets": 2,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+1 Max Turret"
+        },
+        {
+          "points": 2,
+          "effect": "+8 Turret DPS, +75 Turret Health"
+        },
+        {
+          "points": 5,
+          "effect": "+1 Max Turret, Turrets slow by 20%"
+        }
+      ]
+    },
+    {
+      "id": "medicinal_specter",
+      "name": "Medicinal Specter",
+      "key": "2",
+      "type": "active",
+      "description": "Deploy a healing station that regenerates health for nearby allies.",
+      "cooldown": 35,
+      "healPerSecond": 28,
+      "spiritCoefficient": 0.4,
+      "stationHealth": 200,
+      "duration": 25,
+      "radius": 12,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10 Heal/s"
+        },
+        {
+          "points": 2,
+          "effect": "+10 Heal/s, +4m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+15 Heal/s, Also grants +15% bullet resist in radius"
+        }
+      ]
+    },
+    {
+      "id": "spectral_wall",
+      "name": "Spectral Wall",
+      "key": "3",
+      "type": "active",
+      "description": "Create a wall that blocks enemy movement and bullets. Allies can pass through.",
+      "cooldown": 40,
+      "wallHealth": 500,
+      "duration": 7,
+      "wallWidth": 18,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+250 Wall Health"
+        },
+        {
+          "points": 2,
+          "effect": "+3s Duration, +6m Width"
+        },
+        {
+          "points": 5,
+          "effect": "+500 Wall Health, Wall also damages nearby enemies"
+        }
+      ]
+    },
+    {
+      "id": "heavy_barrage",
+      "name": "Heavy Barrage",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Deploy a massive turret that fires rockets at enemies. Can be repositioned.",
+      "cooldown": 140,
+      "baseDamage": 80,
+      "spiritCoefficient": 1.2,
+      "turretHealth": 700,
+      "duration": 20,
+      "radius": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+25 Damage Per Rocket"
+        },
+        {
+          "points": 2,
+          "effect": "+250 Turret Health, +5m Range"
+        },
+        {
+          "points": 5,
+          "effect": "+40 Damage Per Rocket, Rockets also slow by 30%"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "category": "vitality",
+  "items": [
+    {
+      "id": "extra_regen",
+      "name": "Extra Regen",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "healthRegen": 3
+      },
+      "passive": null
+    },
+    {
+      "id": "extra_health",
+      "name": "Extra Health",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "health": 185
+      },
+      "passive": null
+    },
+    {
+      "id": "extra_stamina",
+      "name": "Extra Stamina",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "stamina": 1
+      },
+      "passive": {
+        "description": "+12% slide distance",
+        "slideDistance": 0.12
+      }
+    },
+    {
+      "id": "rebuttal",
+      "name": "Rebuttal",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "health": 75
+      },
+      "passive": {
+        "description": "On a successful Parry against an enemy Hero, Heal yourself for the damage parried and returns that damage to the target, and temporarily gain increased damage."
+      }
+    },
+    {
+      "id": "healing_rite",
+      "name": "Healing Rite",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "health": 50
+      },
+      "active": {
+        "description": "Grant Regen and Sprint Speed to the target. Gets dispelled if you take damage from enemy players or objectives. Can be self-cast.",
+        "healPerSecond": 28,
+        "cooldown": 70,
+        "range": 30
+      }
+    },
+    {
+      "id": "melee_lifesteal",
+      "name": "Melee Lifesteal",
+      "tier": 1,
+      "cost": 800,
+      "stats": {
+        "health": 100
+      },
+      "passive": {
+        "description": "Your next Melee attack heals you. This heal is 30% effective vs non-heroes. Cooldown is 2x as long for Light Melee hits.",
+        "meleeHeal": 100,
+        "cooldown": 8
+      }
+    },
+    {
+      "id": "guardian_ward",
+      "name": "Guardian Ward",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "health": 100,
+        "bulletResist": 0.12,
+        "moveSpeed": 2.75
+      },
+      "active": {
+        "description": "Provide the target with a Barrier and temporary Move Speed. Can be self-cast.Cooldown is reduced by half when cast on someone else.",
+        "cooldown": 45,
+        "range": 40
+      }
+    },
+    {
+      "id": "healbane",
+      "name": "Healbane",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "health": 75,
+        "weaponDamage": 0.05,
+        "spiritPower": 7
+      },
+      "passive": {
+        "description": "Your Spirit Damage applies Healing Reduction. If an enemy hero dies under this effect, you receive a large heal.",
+        "healingReduction": 0.4,
+        "duration": 8
+      }
+    },
+    {
+      "id": "healing_booster",
+      "name": "Healing Booster",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "health": 100,
+        "healthRegen": 3
+      },
+      "passive": {
+        "description": "Increases the effectiveness of your healing by 20%."
+      }
+    },
+    {
+      "id": "battle_vest",
+      "name": "Battle Vest",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "health": 125,
+        "bulletResist": 0.15,
+        "weaponDamage": 0.15,
+        "fireRate": 0.08
+      },
+      "passive": {
+        "description": "While you are above 65% health, gain weapon damage and bonus fire rate."
+      }
+    },
+    {
+      "id": "enduring_speed",
+      "name": "Enduring Speed",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "health": 75,
+        "sprintSpeed": 2,
+        "moveSpeed": 2
+      },
+      "passive": {
+        "description": "Reduces the effect of enemy Move Speed penalties."
+      }
+    },
+    {
+      "id": "debuff_reducer",
+      "name": "Debuff Reducer",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "health": 50,
+        "spiritResist": 0.12
+      },
+      "passive": {
+        "description": "Reduces the duration of all negative effects applied to you."
+      }
+    },
+    {
+      "id": "spirit_lifesteal",
+      "name": "Spirit Lifesteal",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritLifesteal": 0.23,
+        "spiritPower": 6,
+        "health": 70
+      },
+      "passive": null
+    },
+    {
+      "id": "enchanters_emblem",
+      "name": "Enchanter's Emblem",
+      "tier": 2,
+      "cost": 1600,
+      "stats": {
+        "spiritPower": 15,
+        "spiritResist": 0.15,
+        "healthRegen": 2
+      },
+      "passive": {
+        "description": "While you are above 65% health, gain bonus Spirit and Cooldown Reduction.",
+        "cooldownReduction": 0.05
+      }
+    },
+    {
+      "id": "lifestrike",
+      "name": "Lifestrike",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "health": 125
+      },
+      "passive": {
+        "description": "Your Melee Attack applies Movement Slow and heals you for 50% of the Melee Damage dealt plus 160. This heal is 40% effective vs non-heroes. Cooldown is 2x as long for Light Melee hits.",
+        "meleeHeal": 175,
+        "meleeDamage": 75,
+        "cooldown": 4,
+        "slowPercent": 0.6
+      }
+    },
+    {
+      "id": "fortitude",
+      "name": "Fortitude",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "health": 375,
+        "healthRegen": 6,
+        "moveSpeed": 1.25
+      },
+      "passive": {
+        "description": "After not taking damage for 13s, gain 2% Max Health Regen.",
+        "condition": "high_health"
+      }
+    },
+    {
+      "id": "counterspell",
+      "name": "Counterspell",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "health": 100,
+        "spiritResist": 0.2,
+        "moveSpeed": 1.75
+      },
+      "active": {
+        "description": "Your next parry protects you from the damage and effects of enemy abilities and items. On a successful spell parry heal and gain move speed and Spirit.",
+        "duration": 4,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "healing_nova",
+      "name": "Healing Nova",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "health": 125
+      },
+      "active": {
+        "description": "Heal yourself and nearby allies.",
+        "healAmount": 190,
+        "radius": 20,
+        "cooldown": 60
+      }
+    },
+    {
+      "id": "bullet_resilience",
+      "name": "Bullet Resilience",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "bulletResist": 0.35
+      },
+      "passive": null
+    },
+    {
+      "id": "metal_skin",
+      "name": "Metal Skin",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "health": 150
+      },
+      "active": {
+        "description": "Become immune to bullets.",
+        "duration": 5,
+        "cooldown": 20
+      }
+    },
+    {
+      "id": "debuff_remover",
+      "name": "Debuff Remover",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "health": 100,
+        "spiritResist": 0.12
+      },
+      "active": {
+        "description": "Purge all non-ultimate negative effects currently applied to you. If any effects were removed, heal yourself and gain a move speed bonus. Cannot be used while Stunned or Slept.",
+        "cooldown": 50
+      }
+    },
+    {
+      "id": "fury_trance",
+      "name": "Fury Trance",
+      "tier": 3,
+      "cost": 3200,
+      "stats": {
+        "health": 100
+      },
+      "active": {
+        "description": "Grants Fire Rate and Spirit Resistance but Silences you and disables stamina usage and regeneration.",
+        "cooldown": 18,
+        "duration": 6
+      }
+    },
+    {
+      "id": "colossus",
+      "name": "Colossus",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 300,
+        "healthRegen": 12,
+        "weaponDamage": 0.15
+      },
+      "active": {
+        "description": "Gain Bullet and Spirit Resist, and slow the move and dash speed of enemies nearby. Your model size grows by 20%.",
+        "cooldown": 37,
+        "duration": 7,
+        "slowPercent": 0.3,
+        "radius": 14
+      }
+    },
+    {
+      "id": "divine_barrier",
+      "name": "Divine Barrier",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 200,
+        "spiritResist": 0.2,
+        "bulletResist": 0.2,
+        "moveSpeed": 2.75
+      },
+      "active": {
+        "description": "Remove all non-stun debuffs from the target and provide them with a Barrier and Move Speed. Can be self-cast. Cooldown is reduced by half when cast on someone else.",
+        "cooldown": 45,
+        "range": 40
+      }
+    },
+    {
+      "id": "diviners_kevlar",
+      "name": "Diviner's Kevlar",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "spiritPower": 35,
+        "bulletResist": 0.2
+      },
+      "passive": {
+        "description": "Upon casting an ultimate ability gain a Barrier and temporary Spirit Power.",
+        "regenPerSpirit": 1.5,
+        "cooldown": 64
+      }
+    },
+    {
+      "id": "plated_armor",
+      "name": "Plated Armor",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 100,
+        "bulletResist": 0.3
+      },
+      "passive": {
+        "description": "Gain a chance to either deflect incoming bullets, preventing all weapon damage or prevent all on-hit effects from bullets.",
+        "cooldown": 1
+      }
+    },
+    {
+      "id": "cheat_death",
+      "name": "Cheat Death",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 200,
+        "moveSpeed": -2
+      },
+      "passive": {
+        "description": "When you would take lethal damage, instead become temporarily death immune and removes all non-stun debuffs. While death immune, you deal reduced damage, have reduced healing and move slower.",
+        "cooldown": 90
+      }
+    },
+    {
+      "id": "healing_tempo",
+      "name": "Healing Tempo",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 150,
+        "healthRegen": 6,
+        "fireRate": 0.4,
+        "moveSpeed": 1.25
+      },
+      "passive": {
+        "description": "Applying heal to yourself or an ally grants the target bonus fire rate and bonus move speed.Does not apply on innate Regen or innate Bullet/Spirit Lifesteal.",
+        "cooldown": 1
+      }
+    },
+    {
+      "id": "inhibitor",
+      "name": "Inhibitor",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 125,
+        "spiritResist": 0.1,
+        "weaponDamage": 0.15
+      },
+      "passive": {
+        "description": "Your bullets build up to reduce the target's outgoing damage and apply healing reduction.",
+        "radius": 18
+      }
+    },
+    {
+      "id": "juggernaut",
+      "name": "Juggernaut",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 300,
+        "healthRegen": 8,
+        "moveSpeed": 2
+      },
+      "passive": {
+        "description": "Immune to slow while sprinting, increased sprint speed"
+      }
+    },
+    {
+      "id": "phantom_strike",
+      "name": "Phantom Strike",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 150,
+        "weaponDamage": 0.15,
+        "spiritPower": 8
+      },
+      "active": {
+        "description": "Teleport to an enemy target and pull them to the ground. Dealing damage, Move speed reduction and Disarm.",
+        "cooldown": 35,
+        "slowPercent": 0.5,
+        "range": 25
+      }
+    },
+    {
+      "id": "leech",
+      "name": "Leech",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "bulletLifesteal": 0.35,
+        "spiritLifesteal": 0.35,
+        "weaponDamage": 0.12,
+        "spiritPower": 12,
+        "health": 120
+      },
+      "passive": null
+    },
+    {
+      "id": "infuser",
+      "name": "Infuser",
+      "tier": 4,
+      "cost": 6400,
+      "stats": {
+        "health": 100,
+        "spiritPower": 30,
+        "spiritResist": 0.1
+      },
+      "active": {
+        "description": "Gain Spirit Lifesteal and Spirit Power.",
+        "duration": 6,
+        "cooldown": 30
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "ivy",
+  "name": "Ivy",
+  "tags": [
+    "Support",
+    "Healer",
+    "Control"
+  ],
+  "baseStats": {
+    "health": 725,
+    "healthRegen": 2,
+    "bulletDamage": 6.3,
+    "fireRate": 11.11,
+    "clipSize": 40,
+    "reloadTime": 2.3,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.2,
+    "sprintSpeed": 1.6,
+    "stamina": 4
+  },
+  "abilities": [
+    {
+      "id": "kudzu_bomb",
+      "name": "Kudzu Bomb",
+      "key": "1",
+      "type": "active",
+      "description": "Throw a bomb that creates a damaging field of thorns. Enemies inside are slowed.",
+      "cooldown": 28,
+      "baseDamage": 35,
+      "spiritCoefficient": 0.5,
+      "duration": 4.5,
+      "slowPercent": 0.2,
+      "radius": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 DPS"
+        },
+        {
+          "points": 2,
+          "effect": "+2s Duration, +3m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+25 DPS, Enemies take +15% bullet damage in field"
+        }
+      ]
+    },
+    {
+      "id": "watcher_stone",
+      "name": "Watcher's Stone",
+      "key": "2",
+      "type": "active",
+      "description": "Place a stone that grants vision. Press again to teleport to the stone.",
+      "cooldown": 45,
+      "visionRadius": 20,
+      "stoneDuration": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15s Stone Duration"
+        },
+        {
+          "points": 2,
+          "effect": "-15s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+1 Stone Charge, Teleport heals for 150"
+        }
+      ]
+    },
+    {
+      "id": "air_drop",
+      "name": "Air Drop",
+      "key": "3",
+      "type": "active",
+      "description": "Fly to an ally, healing them on arrival. Also grants temporary sprint speed.",
+      "cooldown": 40,
+      "healAmount": 175,
+      "spiritCoefficient": 1,
+      "sprintBonus": 3,
+      "sprintDuration": 4,
+      "range": 50,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+75 Heal"
+        },
+        {
+          "points": 2,
+          "effect": "+75 Heal, +2s Sprint Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+100 Heal, Also cleanses negative effects on ally"
+        }
+      ]
+    },
+    {
+      "id": "stone_form",
+      "name": "Stone Form",
+      "key": "4",
+      "type": "ultimate",
+      "description": "You and nearby allies become briefly immune to damage. Upon exiting, all affected allies are healed.",
+      "cooldown": 150,
+      "baseDamage": 0,
+      "healAmount": 400,
+      "spiritCoefficient": 1.5,
+      "duration": 3,
+      "radius": 20,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+100 Heal"
+        },
+        {
+          "points": 2,
+          "effect": "+0.75s Duration, +5m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+200 Heal, Also cleanses negative effects"
+        }
+      ]
+    }
+  ]
+}

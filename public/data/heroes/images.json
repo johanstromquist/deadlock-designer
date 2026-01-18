@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://deadlock.wiki/images/thumb",
+  "heroes": {
+    "abrams": "6/6d/Abrams_card.png/190px-Abrams_card.png",
+    "bebop": "4/49/Bebop_card.png/190px-Bebop_card.png",
+    "calico": "e/e4/Calico_card.png/190px-Calico_card.png",
+    "dynamo": "7/70/Dynamo_card.png/190px-Dynamo_card.png",
+    "grey_talon": "5/5a/Grey_Talon_card.png/190px-Grey_Talon_card.png",
+    "haze": "1/1b/Haze_card.png/190px-Haze_card.png",
+    "holliday": "1/10/Holliday_card.png/190px-Holliday_card.png",
+    "infernus": "6/6b/Infernus_card.png/190px-Infernus_card.png",
+    "ivy": "2/2c/Ivy_card.png/190px-Ivy_card.png",
+    "kelvin": "7/76/Kelvin_card.png/190px-Kelvin_card.png",
+    "lady_geist": "e/e8/Lady_Geist_card.png/190px-Lady_Geist_card.png",
+    "lash": "5/5a/Lash_card.png/190px-Lash_card.png",
+    "mcginnis": "5/55/McGinnis_card.png/190px-McGinnis_card.png",
+    "mirage": "7/77/Mirage_card.png/190px-Mirage_card.png",
+    "mo_and_krill": "a/a1/Mo_%26_Krill_card.png/190px-Mo_%26_Krill_card.png",
+    "paradox": "0/08/Paradox_card.png/190px-Paradox_card.png",
+    "pocket": "0/06/Pocket_card.png/190px-Pocket_card.png",
+    "seven": "c/cf/Seven_card.png/190px-Seven_card.png",
+    "shiv": "b/b8/Shiv_card.png/190px-Shiv_card.png",
+    "vindicta": "6/69/Vindicta_card.png/190px-Vindicta_card.png",
+    "viscous": "5/53/Viscous_card.png/190px-Viscous_card.png",
+    "warden": "1/10/Warden_card.png/190px-Warden_card.png",
+    "wraith": "8/85/Wraith_card.png/190px-Wraith_card.png",
+    "yamato": "2/2b/Yamato_card.png/190px-Yamato_card.png"
+  }
+}

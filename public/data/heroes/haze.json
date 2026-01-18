@@ -1,0 +1,123 @@
+{
+  "id": "haze",
+  "name": "Haze",
+  "tags": [
+    "Carry",
+    "Assassin",
+    "Agile"
+  ],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 2,
+    "bulletDamage": 6.3,
+    "fireRate": 13.33,
+    "clipSize": 35,
+    "reloadTime": 2.1,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 8.2,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "sleep_dagger",
+      "name": "Sleep Dagger",
+      "key": "1",
+      "type": "active",
+      "description": "Throw a dagger that puts the first enemy hit to sleep. Sleeping enemies wake on damage.",
+      "cooldown": 27,
+      "sleepDuration": 3,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+0.5s Sleep Duration"
+        },
+        {
+          "points": 2,
+          "effect": "-8s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+1s Sleep, Target takes +25% damage on wake"
+        }
+      ]
+    },
+    {
+      "id": "smoke_bomb",
+      "name": "Smoke Bomb",
+      "key": "2",
+      "type": "active",
+      "description": "Drop a smoke bomb that creates a cloud. Enemies inside are slowed and blinded.",
+      "cooldown": 35,
+      "duration": 5,
+      "slowPercent": 0.25,
+      "radius": 10,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+2s Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+10% Slow, +3m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "Haze is invisible inside smoke"
+        }
+      ]
+    },
+    {
+      "id": "fixation",
+      "name": "Fixation",
+      "key": "3",
+      "type": "passive",
+      "description": "Consecutive hits on the same target deal increasing damage. Resets when switching targets.",
+      "cooldown": 0,
+      "damagePerStack": 0.015,
+      "maxStacks": 15,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+5 Max Stacks"
+        },
+        {
+          "points": 2,
+          "effect": "+0.5% Damage Per Stack"
+        },
+        {
+          "points": 5,
+          "effect": "+10 Max Stacks, +0.5% Damage Per Stack"
+        }
+      ]
+    },
+    {
+      "id": "bullet_dance",
+      "name": "Bullet Dance",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Enter a deadly dance, rapidly shooting all nearby enemies. Haze is immune to damage during Bullet Dance.",
+      "cooldown": 160,
+      "baseDamage": 75,
+      "spiritCoefficient": 1,
+      "duration": 3,
+      "radius": 14,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+20 Damage Per Shot"
+        },
+        {
+          "points": 2,
+          "effect": "+1s Duration, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+30 Damage Per Shot, -30s Cooldown"
+        }
+      ]
+    }
+  ]
+}

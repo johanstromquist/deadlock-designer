@@ -1,0 +1,130 @@
+{
+  "id": "pocket",
+  "name": "Pocket",
+  "tags": [
+    "Assassin",
+    "Mage",
+    "Trickster"
+  ],
+  "baseStats": {
+    "health": 750,
+    "healthRegen": 1,
+    "bulletDamage": 7.8,
+    "fireRate": 7.69,
+    "clipSize": 42,
+    "reloadTime": 2.1,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.2,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "barrage",
+      "name": "Barrage",
+      "key": "1",
+      "type": "active",
+      "description": "Fire a volley of projectiles that deal damage. Can be channeled for more projectiles.",
+      "cooldown": 9,
+      "baseDamage": 48,
+      "spiritCoefficient": 0.55,
+      "projectiles": 4,
+      "maxChannelProjectiles": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10 Damage Per Projectile"
+        },
+        {
+          "points": 2,
+          "effect": "+2 Projectiles"
+        },
+        {
+          "points": 5,
+          "effect": "+15 Damage Per Projectile, Projectiles pierce"
+        }
+      ]
+    },
+    {
+      "id": "flying_cloak",
+      "name": "Flying Cloak",
+      "key": "2",
+      "type": "active",
+      "description": "Send out your cloak as a projectile. Reactivate to teleport to the cloak's location.",
+      "cooldown": 30,
+      "baseDamage": 55,
+      "spiritCoefficient": 0.4,
+      "range": 35,
+      "speed": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+30 Damage, +10m Range"
+        },
+        {
+          "points": 2,
+          "effect": "-8s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Teleport also stuns nearby enemies for 1s"
+        }
+      ]
+    },
+    {
+      "id": "enchanted_satchel",
+      "name": "Enchanted Satchel",
+      "key": "3",
+      "type": "active",
+      "description": "Throw a satchel that puts enemies to sleep. Sleeping enemies take bonus damage when woken.",
+      "cooldown": 32,
+      "sleepDuration": 2.5,
+      "wakeupDamage": 1.25,
+      "radius": 5,
+      "range": 20,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+0.75s Sleep Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+15% Wake-up Damage, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+1s Sleep Duration, Also disarms for 3s on wake"
+        }
+      ]
+    },
+    {
+      "id": "affliction",
+      "name": "Affliction",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Mark all enemies in range. After a delay, marked enemies take damage and are slowed.",
+      "cooldown": 130,
+      "baseDamage": 180,
+      "spiritCoefficient": 1.8,
+      "slowPercent": 0.5,
+      "slowDuration": 3,
+      "delay": 2,
+      "radius": 30,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+60 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+80 Damage, +5m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+100 Damage, Enemies also take 25% more spirit damage for 6s"
+        }
+      ]
+    }
+  ]
+}

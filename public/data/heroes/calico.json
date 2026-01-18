@@ -1,0 +1,127 @@
+{
+  "id": "calico",
+  "name": "Calico",
+  "tags": [
+    "Support",
+    "Mage",
+    "Healer"
+  ],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 2,
+    "bulletDamage": 5.2,
+    "fireRate": 12.5,
+    "clipSize": 45,
+    "reloadTime": 2.2,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.2,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "feline_friends",
+      "name": "Feline Friends",
+      "key": "1",
+      "type": "active",
+      "description": "Summon cats that orbit around you, attacking nearby enemies.",
+      "cooldown": 20,
+      "baseDamage": 30,
+      "spiritCoefficient": 0.35,
+      "catCount": 3,
+      "duration": 12,
+      "attackRange": 15,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+1 Cat"
+        },
+        {
+          "points": 2,
+          "effect": "+12 Damage Per Cat, +5s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+1 Cat, Cats also heal nearby allies for 10/s"
+        }
+      ]
+    },
+    {
+      "id": "wall_run",
+      "name": "Wall Run",
+      "key": "2",
+      "type": "active",
+      "description": "Run along walls for a duration. Gain bonus move speed while wall running.",
+      "cooldown": 25,
+      "duration": 6,
+      "moveSpeedBonus": 4,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+3s Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+2 Move Speed, -8s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "Can jump off walls to dash, dealing 100 damage on landing"
+        }
+      ]
+    },
+    {
+      "id": "purrsuit",
+      "name": "Purrsuit",
+      "key": "3",
+      "type": "active",
+      "description": "Mark an enemy. Gain bonus move speed when moving towards the marked target.",
+      "cooldown": 22,
+      "moveSpeedBonus": 3,
+      "duration": 10,
+      "range": 40,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+1.5 Move Speed Towards Target"
+        },
+        {
+          "points": 2,
+          "effect": "+5s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "Also gain +25% weapon damage against marked target"
+        }
+      ]
+    },
+    {
+      "id": "nine_lives",
+      "name": "Nine Lives",
+      "key": "4",
+      "type": "ultimate",
+      "description": "For a duration, if you or a nearby ally would die, they are instead healed and gain temporary invulnerability.",
+      "cooldown": 180,
+      "healAmount": 350,
+      "spiritCoefficient": 1.5,
+      "invulnDuration": 2,
+      "auraDuration": 10,
+      "radius": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+100 Heal"
+        },
+        {
+          "points": 2,
+          "effect": "+0.75s Invuln, +4s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+150 Heal, -45s Cooldown"
+        }
+      ]
+    }
+  ]
+}

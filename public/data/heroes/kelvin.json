@@ -1,0 +1,132 @@
+{
+  "id": "kelvin",
+  "name": "Kelvin",
+  "tags": [
+    "Tank",
+    "Disabler",
+    "Initiator"
+  ],
+  "baseStats": {
+    "health": 850,
+    "healthRegen": 1,
+    "bulletDamage": 16,
+    "fireRate": 5.56,
+    "clipSize": 45,
+    "reloadTime": 2.4,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.7,
+    "sprintSpeed": 1.1,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "frost_grenade",
+      "name": "Frost Grenade",
+      "key": "1",
+      "type": "active",
+      "description": "Throw a grenade that explodes and slows all enemies hit.",
+      "cooldown": 24,
+      "baseDamage": 95,
+      "spiritCoefficient": 0.9,
+      "slowPercent": 0.4,
+      "slowDuration": 2.5,
+      "radius": 7,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+40 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+15% Slow, +1s Slow Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+60 Damage, -6s Cooldown"
+        }
+      ]
+    },
+    {
+      "id": "ice_path",
+      "name": "Ice Path",
+      "key": "2",
+      "type": "active",
+      "description": "Create a trail of ice that boosts movement speed for allies and damages and slows enemies.",
+      "cooldown": 32,
+      "baseDamage": 25,
+      "spiritCoefficient": 0.3,
+      "duration": 6,
+      "allySpeedBoost": 3,
+      "enemySlowPercent": 0.3,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+1.5 Ally Speed Boost"
+        },
+        {
+          "points": 2,
+          "effect": "+15 DPS, +10% Enemy Slow"
+        },
+        {
+          "points": 5,
+          "effect": "+25 DPS, Path width increased"
+        }
+      ]
+    },
+    {
+      "id": "arctic_beam",
+      "name": "Arctic Beam",
+      "key": "3",
+      "type": "active",
+      "description": "Fire a beam that damages and slows enemies. Deals bonus damage to enemies who are already slowed.",
+      "cooldown": 20,
+      "baseDamage": 48,
+      "spiritCoefficient": 0.7,
+      "duration": 3,
+      "slowPercent": 0.45,
+      "bonusDamagePercent": 0.25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10% Slow"
+        },
+        {
+          "points": 2,
+          "effect": "+15 DPS"
+        },
+        {
+          "points": 5,
+          "effect": "+25 DPS, +15% Bonus Damage to Slowed"
+        }
+      ]
+    },
+    {
+      "id": "frozen_shelter",
+      "name": "Frozen Shelter",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Create an ice dome that blocks enemy projectiles and heals allies inside. Enemies inside are slowed.",
+      "cooldown": 130,
+      "healPerSecond": 55,
+      "spiritCoefficient": 1,
+      "duration": 5,
+      "radius": 12,
+      "enemySlowPercent": 0.5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 Heal/s, +2m Radius"
+        },
+        {
+          "points": 2,
+          "effect": "+20 Heal/s, +1.5s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+30 Heal/s, Dome explodes at end dealing 200 damage"
+        }
+      ]
+    }
+  ]
+}

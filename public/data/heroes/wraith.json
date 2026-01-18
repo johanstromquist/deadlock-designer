@@ -1,0 +1,125 @@
+{
+  "id": "wraith",
+  "name": "Wraith",
+  "tags": [
+    "Carry",
+    "Assassin",
+    "Burst"
+  ],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 2,
+    "bulletDamage": 21,
+    "fireRate": 3.45,
+    "clipSize": 20,
+    "reloadTime": 1.8,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.2,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "card_trick",
+      "name": "Card Trick",
+      "key": "1",
+      "type": "active",
+      "description": "Throw cards that deal damage. Can store multiple charges.",
+      "cooldown": 6,
+      "baseDamage": 45,
+      "spiritCoefficient": 0.4,
+      "charges": 3,
+      "maxCharges": 3,
+      "range": 35,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 Damage Per Card"
+        },
+        {
+          "points": 2,
+          "effect": "+1 Max Charge"
+        },
+        {
+          "points": 5,
+          "effect": "+25 Damage Per Card, Cards pierce enemies"
+        }
+      ]
+    },
+    {
+      "id": "project_mind",
+      "name": "Project Mind",
+      "key": "2",
+      "type": "active",
+      "description": "Project your spirit forward. Reactivate to teleport to the spirit's location.",
+      "cooldown": 35,
+      "range": 25,
+      "duration": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10m Range"
+        },
+        {
+          "points": 2,
+          "effect": "+4s Duration, -10s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "Teleporting also cleanses negative effects"
+        }
+      ]
+    },
+    {
+      "id": "full_auto",
+      "name": "Full Auto",
+      "key": "3",
+      "type": "active",
+      "description": "Switch to full auto mode, gaining increased fire rate but reduced accuracy.",
+      "cooldown": 30,
+      "fireRateBonus": 1,
+      "duration": 8,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+30% Fire Rate"
+        },
+        {
+          "points": 2,
+          "effect": "+3s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+40% Fire Rate, Also grants +15% lifesteal"
+        }
+      ]
+    },
+    {
+      "id": "telekinesis",
+      "name": "Telekinesis",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Lift an enemy into the air, holding them in place. They take damage over time while lifted.",
+      "cooldown": 90,
+      "baseDamage": 55,
+      "spiritCoefficient": 0.7,
+      "duration": 2.5,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+20 DPS"
+        },
+        {
+          "points": 2,
+          "effect": "+0.75s Duration, +10m Range"
+        },
+        {
+          "points": 5,
+          "effect": "+30 DPS, -25s Cooldown"
+        }
+      ]
+    }
+  ]
+}

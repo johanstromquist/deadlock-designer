@@ -1,0 +1,860 @@
+{
+  "generated": "2026-01-17T11:05:59.006Z",
+  "apiSource": "https://assets.deadlock-api.com/v2/heroes",
+  "summary": {
+    "totalDiscrepancies": 112,
+    "statMismatches": 88,
+    "abilityMismatches": 0,
+    "missingData": 24
+  },
+  "discrepancies": [
+    {
+      "hero": "abrams",
+      "field": "health",
+      "type": "stat",
+      "local": 650,
+      "api": 770,
+      "diff": "18.5%"
+    },
+    {
+      "hero": "abrams",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2.5,
+      "api": 1.5,
+      "diff": "-40.0%"
+    },
+    {
+      "hero": "abrams",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.4,
+      "diff": "-8.6%"
+    },
+    {
+      "hero": "abrams",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "abrams",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "bebop",
+      "field": "health",
+      "type": "stat",
+      "local": 700,
+      "api": 850,
+      "diff": "21.4%"
+    },
+    {
+      "hero": "bebop",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2.5,
+      "api": 1.5,
+      "diff": "-40.0%"
+    },
+    {
+      "hero": "bebop",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.45,
+      "diff": "-7.9%"
+    },
+    {
+      "hero": "bebop",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 4,
+      "diff": "33.3%"
+    },
+    {
+      "hero": "bebop",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "calico",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 700,
+      "diff": "27.3%"
+    },
+    {
+      "hero": "calico",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 7.2,
+      "diff": "2.9%"
+    },
+    {
+      "hero": "calico",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "calico",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "dynamo",
+      "field": "health",
+      "type": "stat",
+      "local": 620,
+      "api": 850,
+      "diff": "37.1%"
+    },
+    {
+      "hero": "dynamo",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2,
+      "api": 1.75,
+      "diff": "-12.5%"
+    },
+    {
+      "hero": "dynamo",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.7,
+      "diff": "-4.3%"
+    },
+    {
+      "hero": "dynamo",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "dynamo",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "grey_talon",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 750,
+      "diff": "36.4%"
+    },
+    {
+      "hero": "grey_talon",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.3,
+      "diff": "-10.0%"
+    },
+    {
+      "hero": "grey_talon",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "grey_talon",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 4
+    },
+    {
+      "hero": "haze",
+      "field": "health",
+      "type": "stat",
+      "local": 500,
+      "api": 700,
+      "diff": "40.0%"
+    },
+    {
+      "hero": "haze",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 1.5,
+      "api": 2,
+      "diff": "33.3%"
+    },
+    {
+      "hero": "haze",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 8.2,
+      "diff": "17.1%"
+    },
+    {
+      "hero": "haze",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "haze",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "holliday",
+      "field": "health",
+      "type": "stat",
+      "local": 525,
+      "api": 750,
+      "diff": "42.9%"
+    },
+    {
+      "hero": "holliday",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 1.5,
+      "api": 1,
+      "diff": "-33.3%"
+    },
+    {
+      "hero": "holliday",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 8.2,
+      "diff": "17.1%"
+    },
+    {
+      "hero": "holliday",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "holliday",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 2
+    },
+    {
+      "hero": "infernus",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 800,
+      "diff": "45.5%"
+    },
+    {
+      "hero": "infernus",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.7,
+      "diff": "-4.3%"
+    },
+    {
+      "hero": "infernus",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "infernus",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "ivy",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 725,
+      "diff": "31.8%"
+    },
+    {
+      "hero": "ivy",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 7.2,
+      "diff": "2.9%"
+    },
+    {
+      "hero": "ivy",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "ivy",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 4
+    },
+    {
+      "hero": "kelvin",
+      "field": "health",
+      "type": "stat",
+      "local": 660,
+      "api": 850,
+      "diff": "28.8%"
+    },
+    {
+      "hero": "kelvin",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2.5,
+      "api": 1,
+      "diff": "-60.0%"
+    },
+    {
+      "hero": "kelvin",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.7,
+      "diff": "-4.3%"
+    },
+    {
+      "hero": "kelvin",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.1,
+      "diff": "-63.3%"
+    },
+    {
+      "hero": "kelvin",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "lady_geist",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 850,
+      "diff": "54.5%"
+    },
+    {
+      "hero": "lady_geist",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2,
+      "api": 1,
+      "diff": "-50.0%"
+    },
+    {
+      "hero": "lady_geist",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.3,
+      "diff": "-10.0%"
+    },
+    {
+      "hero": "lady_geist",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 2.6,
+      "diff": "-13.3%"
+    },
+    {
+      "hero": "lady_geist",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "lash",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 750,
+      "diff": "36.4%"
+    },
+    {
+      "hero": "lash",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 7.2,
+      "diff": "2.9%"
+    },
+    {
+      "hero": "lash",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 2.1,
+      "diff": "-30.0%"
+    },
+    {
+      "hero": "lash",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "mcginnis",
+      "field": "health",
+      "type": "stat",
+      "local": 600,
+      "api": 750,
+      "diff": "25.0%"
+    },
+    {
+      "hero": "mcginnis",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2.5,
+      "api": 2,
+      "diff": "-20.0%"
+    },
+    {
+      "hero": "mcginnis",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.7,
+      "diff": "-4.3%"
+    },
+    {
+      "hero": "mcginnis",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "mcginnis",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 2
+    },
+    {
+      "hero": "mirage",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 700,
+      "diff": "27.3%"
+    },
+    {
+      "hero": "mirage",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "mirage",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "mo_and_krill",
+      "field": "health",
+      "type": "stat",
+      "local": 700,
+      "api": 900,
+      "diff": "28.6%"
+    },
+    {
+      "hero": "mo_and_krill",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 3,
+      "api": 1,
+      "diff": "-66.7%"
+    },
+    {
+      "hero": "mo_and_krill",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 8,
+      "diff": "14.3%"
+    },
+    {
+      "hero": "mo_and_krill",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "mo_and_krill",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "paradox",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 700,
+      "diff": "27.3%"
+    },
+    {
+      "hero": "paradox",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2,
+      "api": 1,
+      "diff": "-50.0%"
+    },
+    {
+      "hero": "paradox",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.7,
+      "diff": "-4.3%"
+    },
+    {
+      "hero": "paradox",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "paradox",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "pocket",
+      "field": "health",
+      "type": "stat",
+      "local": 500,
+      "api": 750,
+      "diff": "50.0%"
+    },
+    {
+      "hero": "pocket",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 1.5,
+      "api": 1,
+      "diff": "-33.3%"
+    },
+    {
+      "hero": "pocket",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 7.2,
+      "diff": "2.9%"
+    },
+    {
+      "hero": "pocket",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "pocket",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "seven",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 700,
+      "diff": "27.3%"
+    },
+    {
+      "hero": "seven",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2,
+      "api": 1,
+      "diff": "-50.0%"
+    },
+    {
+      "hero": "seven",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.7,
+      "diff": "-4.3%"
+    },
+    {
+      "hero": "seven",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 0.6,
+      "diff": "-80.0%"
+    },
+    {
+      "hero": "seven",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "shiv",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 800,
+      "diff": "45.5%"
+    },
+    {
+      "hero": "shiv",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.7,
+      "diff": "-4.3%"
+    },
+    {
+      "hero": "shiv",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "shiv",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "vindicta",
+      "field": "health",
+      "type": "stat",
+      "local": 500,
+      "api": 725,
+      "diff": "45.0%"
+    },
+    {
+      "hero": "vindicta",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 1.5,
+      "api": 2,
+      "diff": "33.3%"
+    },
+    {
+      "hero": "vindicta",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 7.9,
+      "diff": "12.9%"
+    },
+    {
+      "hero": "vindicta",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "vindicta",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 2
+    },
+    {
+      "hero": "viscous",
+      "field": "health",
+      "type": "stat",
+      "local": 700,
+      "api": 750,
+      "diff": "7.1%"
+    },
+    {
+      "hero": "viscous",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2.5,
+      "api": 2,
+      "diff": "-20.0%"
+    },
+    {
+      "hero": "viscous",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 7.2,
+      "diff": "2.9%"
+    },
+    {
+      "hero": "viscous",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "viscous",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "warden",
+      "field": "health",
+      "type": "stat",
+      "local": 650,
+      "api": 775,
+      "diff": "19.2%"
+    },
+    {
+      "hero": "warden",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2.5,
+      "api": 2,
+      "diff": "-20.0%"
+    },
+    {
+      "hero": "warden",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 6.3,
+      "diff": "-10.0%"
+    },
+    {
+      "hero": "warden",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "warden",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "wraith",
+      "field": "health",
+      "type": "stat",
+      "local": 500,
+      "api": 700,
+      "diff": "40.0%"
+    },
+    {
+      "hero": "wraith",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 1.5,
+      "api": 2,
+      "diff": "33.3%"
+    },
+    {
+      "hero": "wraith",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 7.2,
+      "diff": "2.9%"
+    },
+    {
+      "hero": "wraith",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "wraith",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    },
+    {
+      "hero": "yamato",
+      "field": "health",
+      "type": "stat",
+      "local": 550,
+      "api": 700,
+      "diff": "27.3%"
+    },
+    {
+      "hero": "yamato",
+      "field": "healthRegen",
+      "type": "stat",
+      "local": 2,
+      "api": 1,
+      "diff": "-50.0%"
+    },
+    {
+      "hero": "yamato",
+      "field": "moveSpeed",
+      "type": "stat",
+      "local": 7,
+      "api": 8.2,
+      "diff": "17.1%"
+    },
+    {
+      "hero": "yamato",
+      "field": "sprintSpeed",
+      "type": "stat",
+      "local": 3,
+      "api": 1.6,
+      "diff": "-46.7%"
+    },
+    {
+      "hero": "yamato",
+      "field": "stamina",
+      "type": "missing_local",
+      "api": 3
+    }
+  ]
+}

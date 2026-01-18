@@ -1,0 +1,129 @@
+{
+  "id": "viscous",
+  "name": "Viscous",
+  "tags": [
+    "Tank",
+    "Support",
+    "Initiator"
+  ],
+  "baseStats": {
+    "health": 750,
+    "healthRegen": 2,
+    "bulletDamage": 16,
+    "fireRate": 5,
+    "clipSize": 55,
+    "reloadTime": 2.6,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.2,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "splatter",
+      "name": "Splatter",
+      "key": "1",
+      "type": "active",
+      "description": "Launch a glob that damages enemies and leaves a puddle. Enemies in the puddle are slowed.",
+      "cooldown": 12,
+      "baseDamage": 65,
+      "spiritCoefficient": 0.55,
+      "puddleDuration": 5,
+      "slowPercent": 0.3,
+      "radius": 6,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+25 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+2s Puddle Duration, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+40 Damage, Puddle also applies -30% fire rate"
+        }
+      ]
+    },
+    {
+      "id": "the_cube",
+      "name": "The Cube",
+      "key": "2",
+      "type": "active",
+      "description": "Encase an ally or enemy in a protective cube. Cubed targets are immune to damage but cannot act.",
+      "cooldown": 35,
+      "duration": 3,
+      "healOnEnd": 150,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+1s Duration"
+        },
+        {
+          "points": 2,
+          "effect": "+75 Heal, -8s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "+1s Duration, Cube explodes at end dealing 150 damage to enemies"
+        }
+      ]
+    },
+    {
+      "id": "puddle_punch",
+      "name": "Puddle Punch",
+      "key": "3",
+      "type": "active",
+      "description": "Transform into a puddle and dash forward. Enemies passed through are damaged and knocked up.",
+      "cooldown": 18,
+      "baseDamage": 85,
+      "spiritCoefficient": 0.75,
+      "knockUpDuration": 0.75,
+      "dashDistance": 20,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+35 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+5m Dash Distance, +0.25s Knock Up"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Also grants 40% damage resist during dash"
+        }
+      ]
+    },
+    {
+      "id": "goo_ball",
+      "name": "Goo Ball",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Transform into a bouncing ball of goo. Enemies hit are damaged and bounced away. Viscous heals while rolling.",
+      "cooldown": 110,
+      "baseDamage": 80,
+      "spiritCoefficient": 1,
+      "healPerSecond": 75,
+      "duration": 6,
+      "speed": 18,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+25 Damage Per Hit"
+        },
+        {
+          "points": 2,
+          "effect": "+25 Heal/s, +2s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+40 Damage Per Hit, Ball bounces higher and faster"
+        }
+      ]
+    }
+  ]
+}

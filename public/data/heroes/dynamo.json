@@ -1,0 +1,127 @@
+{
+  "id": "dynamo",
+  "name": "Dynamo",
+  "tags": [
+    "Support",
+    "Tank",
+    "Healer"
+  ],
+  "baseStats": {
+    "health": 850,
+    "healthRegen": 1.75,
+    "bulletDamage": 15,
+    "fireRate": 5.26,
+    "clipSize": 54,
+    "reloadTime": 2.4,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.7,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "kinetic_pulse",
+      "name": "Kinetic Pulse",
+      "key": "1",
+      "type": "active",
+      "description": "Launch a projectile that deals damage and knocks enemies into the air.",
+      "cooldown": 24,
+      "baseDamage": 90,
+      "spiritCoefficient": 0.9,
+      "radius": 4,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+50 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+50 Damage, +1.5m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+70 Damage, -6s Cooldown"
+        }
+      ]
+    },
+    {
+      "id": "quantum_entanglement",
+      "name": "Quantum Entanglement",
+      "key": "2",
+      "type": "active",
+      "description": "Create a link between yourself and an ally. Damage taken is shared between both targets. Also shares healing.",
+      "cooldown": 35,
+      "duration": 9,
+      "range": 30,
+      "sharePercent": 0.35,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15% Shared Damage Reduction"
+        },
+        {
+          "points": 2,
+          "effect": "+4s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "Link cannot be broken by distance"
+        }
+      ]
+    },
+    {
+      "id": "rejuvenating_aurora",
+      "name": "Rejuvenating Aurora",
+      "key": "3",
+      "type": "active",
+      "description": "Create a healing field around you that heals nearby allies over time.",
+      "cooldown": 45,
+      "duration": 7,
+      "healPerSecond": 38,
+      "spiritCoefficient": 0.5,
+      "radius": 12,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+15 Heal/s"
+        },
+        {
+          "points": 2,
+          "effect": "+15 Heal/s, +3m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+20 Heal/s, +50% Move Speed in aura"
+        }
+      ]
+    },
+    {
+      "id": "singularity",
+      "name": "Singularity",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Create a singularity that pulls in and damages all nearby enemies over time. Enemies are stunned at the end.",
+      "cooldown": 150,
+      "baseDamage": 60,
+      "spiritCoefficient": 1.2,
+      "duration": 2.75,
+      "stunDuration": 0.5,
+      "radius": 10,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+20 DPS, +0.25s Stun"
+        },
+        {
+          "points": 2,
+          "effect": "+20 DPS, +0.5s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+30 DPS, +0.5s Stun, -40s Cooldown"
+        }
+      ]
+    }
+  ]
+}

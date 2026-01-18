@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deadlock Character Designer</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <header class="main-header">
+      <h1 class="logo">DEADLOCK</h1>
+      <span class="subtitle">Character Designer</span>
+    </header>
+
+    <main class="main-content">
+      <section id="hero-select" class="panel hero-select-panel">
+        <h2>Select Hero</h2>
+        <div class="hero-filters">
+          <input type="text" id="hero-search" placeholder="Search heroes..." class="search-input">
+          <div class="tag-filters" id="tag-filters"></div>
+        </div>
+        <div class="hero-grid" id="hero-grid"></div>
+      </section>
+
+      <section id="build-panel" class="panel build-panel hidden">
+        <div class="build-nav">
+          <button class="back-btn" id="back-to-heroes">&larr; Back to Heroes</button>
+        </div>
+
+        <div class="build-header">
+          <div class="hero-portrait-large" id="hero-portrait-large">
+            <span class="portrait-fallback" id="portrait-fallback"></span>
+          </div>
+          <div class="selected-hero-info">
+            <h2 id="selected-hero-name"></h2>
+            <div class="hero-tags" id="selected-hero-tags"></div>
+          </div>
+        </div>
+
+        <div class="build-content">
+          <div class="abilities-section">
+            <h3>Abilities</h3>
+            <div class="abilities-grid" id="abilities-grid"></div>
+          </div>
+
+          <div class="items-section">
+            <h3>Items <span class="soul-total">Souls: <span id="total-souls">0</span></span></h3>
+            <div class="item-slots-grid" id="item-slots-grid">
+              <!-- 12 universal slots: 9 base + 3 locked -->
+            </div>
+            <div class="slot-unlock-info">
+              <span class="unlock-hint">Slots 10-12 unlock at 3000 / 6000 / 9000 souls</span>
+            </div>
+          </div>
+
+          <div class="stats-section">
+            <h3>Stats</h3>
+            <div class="stats-panel" id="stats-panel"></div>
+          </div>
+        </div>
+      </section>
+
+      <aside id="item-shop" class="panel item-shop hidden">
+        <div class="shop-header">
+          <h3>Item Shop</h3>
+          <button class="close-shop" id="close-shop">&times;</button>
+        </div>
+        <div class="shop-filters">
+          <div class="category-tabs">
+            <button class="tab active" data-category="all">All</button>
+            <button class="tab weapon" data-category="weapon">Weapon</button>
+            <button class="tab vitality" data-category="vitality">Vitality</button>
+            <button class="tab spirit" data-category="spirit">Spirit</button>
+          </div>
+          <div class="tier-filters">
+            <button class="tier-btn active" data-tier="all">All</button>
+            <button class="tier-btn" data-tier="1">T1 (800)</button>
+            <button class="tier-btn" data-tier="2">T2 (1600)</button>
+            <button class="tier-btn" data-tier="3">T3 (3200)</button>
+            <button class="tier-btn" data-tier="4">T4 (6400)</button>
+          </div>
+        </div>
+        <div class="shop-items" id="shop-items"></div>
+      </aside>
+    </main>
+
+    <div id="build-actions" class="build-actions hidden">
+      <button id="save-build" class="action-btn">Save Build</button>
+      <button id="share-build" class="action-btn">Share Build</button>
+      <button id="reset-build" class="action-btn danger">Reset</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

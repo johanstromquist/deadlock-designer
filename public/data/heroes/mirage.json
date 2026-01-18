@@ -1,0 +1,129 @@
+{
+  "id": "mirage",
+  "name": "Mirage",
+  "tags": [
+    "Mage",
+    "Summoner",
+    "Control"
+  ],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 2,
+    "bulletDamage": 14,
+    "fireRate": 5.26,
+    "clipSize": 40,
+    "reloadTime": 2.2,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7,
+    "sprintSpeed": 1.6,
+    "stamina": 3
+  },
+  "abilities": [
+    {
+      "id": "tornado",
+      "name": "Tornado",
+      "key": "1",
+      "type": "active",
+      "description": "Summon a tornado that travels forward, lifting and damaging enemies in its path.",
+      "cooldown": 28,
+      "baseDamage": 85,
+      "spiritCoefficient": 0.8,
+      "liftDuration": 1,
+      "travelDistance": 30,
+      "radius": 5,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+30 Damage"
+        },
+        {
+          "points": 2,
+          "effect": "+0.5s Lift Duration, +2m Radius"
+        },
+        {
+          "points": 5,
+          "effect": "+50 Damage, Tornado also applies -40% fire rate for 3s"
+        }
+      ]
+    },
+    {
+      "id": "fire_scarabs",
+      "name": "Fire Scarabs",
+      "key": "2",
+      "type": "active",
+      "description": "Release scarabs that seek out nearby enemies, dealing damage over time.",
+      "cooldown": 24,
+      "baseDamage": 55,
+      "spiritCoefficient": 0.55,
+      "scarabCount": 3,
+      "duration": 5,
+      "range": 25,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+20 Damage Per Scarab"
+        },
+        {
+          "points": 2,
+          "effect": "+1 Scarab"
+        },
+        {
+          "points": 5,
+          "effect": "+30 Damage Per Scarab, Scarabs also slow by 25%"
+        }
+      ]
+    },
+    {
+      "id": "djinns_mark",
+      "name": "Djinn's Mark",
+      "key": "3",
+      "type": "active",
+      "description": "Mark an enemy. When the mark expires, the enemy takes damage based on damage dealt to them while marked.",
+      "cooldown": 35,
+      "baseDamage": 50,
+      "spiritCoefficient": 0.4,
+      "damageStoredPercent": 0.35,
+      "duration": 6,
+      "range": 30,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+10% Damage Stored"
+        },
+        {
+          "points": 2,
+          "effect": "+30 Base Damage, +2s Duration"
+        },
+        {
+          "points": 5,
+          "effect": "+15% Damage Stored, Mark cannot be cleansed"
+        }
+      ]
+    },
+    {
+      "id": "traveler",
+      "name": "Traveler",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Create a portal to a target location. Allies can use the portal to teleport.",
+      "cooldown": 140,
+      "range": 80,
+      "portalDuration": 15,
+      "upgrades": [
+        {
+          "points": 1,
+          "effect": "+40m Range"
+        },
+        {
+          "points": 2,
+          "effect": "+10s Portal Duration, -30s Cooldown"
+        },
+        {
+          "points": 5,
+          "effect": "Portal can be used by Mirage twice, Enemies near exit are slowed 50%"
+        }
+      ]
+    }
+  ]
+}
