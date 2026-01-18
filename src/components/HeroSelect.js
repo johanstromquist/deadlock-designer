@@ -21,9 +21,10 @@ export class HeroSelect {
   async loadHeroes() {
     try {
       // Load hero index and images in parallel
+      const base = import.meta.env.BASE_URL;
       const [indexResponse, imagesResponse] = await Promise.all([
-        fetch('/data/heroes/index.json'),
-        fetch('/data/heroes/images.json')
+        fetch(`${base}data/heroes/index.json`),
+        fetch(`${base}data/heroes/images.json`)
       ]);
 
       const index = await indexResponse.json();
@@ -34,7 +35,7 @@ export class HeroSelect {
 
       // Load each hero
       const heroPromises = index.heroes.map(async (heroId) => {
-        const response = await fetch(`/data/heroes/${heroId}.json`);
+        const response = await fetch(`${base}data/heroes/${heroId}.json`);
         return response.json();
       });
 

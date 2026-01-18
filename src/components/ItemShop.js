@@ -21,9 +21,10 @@ export class ItemShop {
 
   async loadItems() {
     try {
+      const base = import.meta.env.BASE_URL;
       const categories = ['weapon', 'vitality', 'spirit'];
       const itemPromises = categories.map(async (category) => {
-        const response = await fetch(`/data/items/${category}.json`);
+        const response = await fetch(`${base}data/items/${category}.json`);
         const data = await response.json();
         return { category, items: data.items };
       });

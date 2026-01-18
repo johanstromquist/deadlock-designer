@@ -220,7 +220,8 @@ class DeadlockDesigner {
 
     // Load hero
     try {
-      const response = await fetch(`/data/heroes/${buildData.heroId}.json`);
+      const base = import.meta.env.BASE_URL;
+      const response = await fetch(`${base}data/heroes/${buildData.heroId}.json`);
       const hero = await response.json();
       this.onHeroSelected(hero);
 
