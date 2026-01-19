@@ -1,0 +1,93 @@
+{
+  "id": "paige",
+  "name": "Paige",
+  "tags": ["Support", "Healer", "Control"],
+  "baseStats": {
+    "health": 650,
+    "healthRegen": 2,
+    "bulletDamage": 35,
+    "fireRate": 1.67,
+    "clipSize": 14,
+    "reloadTime": 2.5,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.9,
+    "sprintSpeed": 3.5
+  },
+  "abilities": [
+    {
+      "id": "conjure_dragon",
+      "name": "Conjure Dragon",
+      "key": "1",
+      "type": "active",
+      "description": "Summon a dragon dealing spirit damage with a burning trail.",
+      "cooldown": 30,
+      "baseDamage": 60,
+      "spiritCoefficient": 1.3,
+      "trailDPS": 30,
+      "duration": 5,
+      "range": 20,
+      "upgrades": [
+        { "points": 1, "effect": "-5s Cooldown" },
+        { "points": 2, "effect": "+2s Trail Duration" },
+        { "points": 5, "effect": "+103.5 Damage & +27 DPS" }
+      ]
+    },
+    {
+      "id": "defend_and_fight",
+      "name": "Defend and Fight!",
+      "key": "2",
+      "type": "active",
+      "description": "Grant an ally a barrier with bonus weapon damage while active. Self-castable.",
+      "cooldown": 30,
+      "barrier": 150,
+      "spiritCoefficient": 1.6,
+      "weaponDamageBonus": 25,
+      "duration": 5,
+      "range": 35,
+      "upgrades": [
+        { "points": 1, "effect": "+16% Fire Rate on barrier" },
+        { "points": 2, "effect": "+100 Barrier & +2s Duration" },
+        { "points": 5, "effect": "2 additional allies gain 75% barrier" }
+      ]
+    },
+    {
+      "id": "captivating_read",
+      "name": "Captivating Read",
+      "key": "3",
+      "type": "active",
+      "description": "Apply slow, then detonate dealing damage and immobilize.",
+      "cooldown": 25,
+      "baseDamage": 120,
+      "spiritCoefficient": 1.3,
+      "slowAmount": 45,
+      "immobilizeDuration": 1.25,
+      "radius": 7.5,
+      "range": 30,
+      "upgrades": [
+        { "points": 1, "effect": "-6s Cooldown" },
+        { "points": 2, "effect": "+0.75s Immobilize Duration" },
+        { "points": 5, "effect": "-18% Spirit Resist on hit for 6s" }
+      ]
+    },
+    {
+      "id": "rallying_charge",
+      "name": "Rallying Charge",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Release spectral cavalry healing allies, damaging enemies; amplifies based on distance traveled.",
+      "cooldown": 190,
+      "baseDamage": 125,
+      "spiritCoefficient": 1.0,
+      "baseHealing": 125,
+      "stunDuration": 1,
+      "duration": 13,
+      "range": 600,
+      "upgrades": [
+        { "points": 1, "effect": "+150 Heal Amount" },
+        { "points": 2, "effect": "+4 Steed Width" },
+        { "points": 5, "effect": "+135 Damage & +0.5s Stun Duration" }
+      ]
+    }
+  ]
+}

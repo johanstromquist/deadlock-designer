@@ -9,6 +9,27 @@ export class AbilityPanel {
     this.hero = null;
     this.upgrades = {};
     this.spiritPower = 0;
+    this.abilityImages = null;
+    this.loadAbilityImages();
+  }
+
+  async loadAbilityImages() {
+    try {
+      const base = import.meta.env.BASE_URL;
+      const response = await fetch(`${base}data/heroes/ability-images.json`);
+      this.abilityImages = await response.json();
+    } catch (err) {
+      console.warn('Could not load ability images:', err);
+      this.abilityImages = {};
+    }
+  }
+
+  getAbilityImageUrl(abilityId) {
+    if (!this.abilityImages || !this.abilityImages[abilityId]) {
+      return null;
+    }
+    const base = import.meta.env.BASE_URL;
+    return `${base}${this.abilityImages[abilityId]}`;
   }
 
   setHero(hero) {
@@ -41,22 +62,26 @@ export class AbilityPanel {
       const isUltimate = ability.type === 'ultimate' || ability.key === '4';
       const currentLevel = this.upgrades[ability.id] || 0;
       const damage = calculateAbilityDamage(ability, this.spiritPower, currentLevel);
+      const imageUrl = this.getAbilityImageUrl(ability.id);
+      const bgStyle = imageUrl ? `style="--ability-bg: url('${imageUrl}')"` : '';
 
       return `
-        <div class="ability-card ${isUltimate ? 'ultimate' : ''}" data-ability-id="${ability.id}">
-          <div class="ability-header">
-            <span class="ability-name">[${ability.key}] ${ability.name}</span>
-            <span class="ability-type">${ability.type}</span>
-          </div>
-          <div class="ability-description">${ability.description}</div>
-          <div class="ability-stats">
-            ${ability.cooldown ? `<span class="ability-stat">CD: <span class="ability-stat-value">${ability.cooldown}s</span></span>` : ''}
-            ${damage ? `<span class="ability-stat">Damage: <span class="ability-stat-value damage-value">${damage.total}</span></span>` : ''}
-            ${ability.duration ? `<span class="ability-stat">Duration: <span class="ability-stat-value">${ability.duration}s</span></span>` : ''}
-            ${ability.range ? `<span class="ability-stat">Range: <span class="ability-stat-value">${ability.range}m</span></span>` : ''}
-          </div>
-          <div class="ability-upgrades">
-            ${this.renderUpgradeButtons(ability, currentLevel)}
+        <div class="ability-card ${isUltimate ? 'ultimate' : ''} ${imageUrl ? 'has-bg' : ''}" data-ability-id="${ability.id}" ${bgStyle}>
+          <div class="ability-content">
+            <div class="ability-header">
+              <span class="ability-name">[${ability.key}] ${ability.name}</span>
+              <span class="ability-type">${ability.type}</span>
+            </div>
+            <div class="ability-description">${ability.description}</div>
+            <div class="ability-stats">
+              ${ability.cooldown ? `<span class="ability-stat">CD: <span class="ability-stat-value">${ability.cooldown}s</span></span>` : ''}
+              ${damage ? `<span class="ability-stat">Damage: <span class="ability-stat-value damage-value">${damage.total}</span></span>` : ''}
+              ${ability.duration ? `<span class="ability-stat">Duration: <span class="ability-stat-value">${ability.duration}s</span></span>` : ''}
+              ${ability.range ? `<span class="ability-stat">Range: <span class="ability-stat-value">${ability.range}m</span></span>` : ''}
+            </div>
+            <div class="ability-upgrades">
+              ${this.renderUpgradeButtons(ability, currentLevel)}
+            </div>
           </div>
         </div>
       `;

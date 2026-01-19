@@ -1,0 +1,85 @@
+{
+  "id": "drifter",
+  "name": "Drifter",
+  "tags": ["Assassin", "Carry", "Mobility"],
+  "baseStats": {
+    "health": 725,
+    "healthRegen": 3.5,
+    "bulletDamage": 19.5,
+    "fireRate": 2.27,
+    "clipSize": 12,
+    "reloadTime": 2.44,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.9,
+    "sprintSpeed": 1.6
+  },
+  "abilities": [
+    {
+      "id": "rend",
+      "name": "Rend",
+      "key": "1",
+      "type": "active",
+      "description": "Swipe cone attack dealing melee damage; grants bonus spirit damage at close range.",
+      "cooldown": 13,
+      "baseDamage": 62,
+      "spiritCoefficient": 1.2,
+      "bonusDamage": 40,
+      "range": 18,
+      "upgrades": [
+        { "points": 1, "effect": "+31.5 Bonus Damage" },
+        { "points": 2, "effect": "-7s Cooldown" },
+        { "points": 5, "effect": "45% Bullet Lifesteal vs affected enemies for 4s" }
+      ]
+    },
+    {
+      "id": "stalkers_mark",
+      "name": "Stalker's Mark",
+      "key": "2",
+      "type": "active",
+      "description": "Mark bleeds first target hit; reactivate to teleport behind bleeding enemy.",
+      "cooldown": 20,
+      "duration": 6,
+      "bleedDamage": 2,
+      "spiritCoefficient": 0.015,
+      "upgrades": [
+        { "points": 1, "effect": "+1%/sec Bleed Damage" },
+        { "points": 2, "effect": "+25% Fire Rate for 6s after ambush" },
+        { "points": 5, "effect": "+2 Ability Charges" }
+      ]
+    },
+    {
+      "id": "bloodscent",
+      "name": "Bloodscent",
+      "key": "3",
+      "type": "passive",
+      "description": "Passive awareness of isolated enemies; amplified damage vs isolated heroes; permanent weapon damage gain on isolated kills.",
+      "cooldown": 0,
+      "amplifiedDamage": 15,
+      "detectionRange": 80,
+      "upgrades": [
+        { "points": 1, "effect": "+2m/s move speed near isolated enemies" },
+        { "points": 2, "effect": "-15s ability cooldown + 3 stamina restore on isolated kill" },
+        { "points": 5, "effect": "+10% Amplified Damage (total 25%)" }
+      ]
+    },
+    {
+      "id": "eternal_night",
+      "name": "Eternal Night",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Darken enemy vision; gain sprint speed boost; attacks trigger spirit damage procs.",
+      "cooldown": 130,
+      "baseDamage": 7,
+      "spiritCoefficient": 0.2,
+      "duration": 7,
+      "radius": 15,
+      "range": 100,
+      "upgrades": [
+        { "points": 1, "effect": "+6.3 Spirit Damage Proc" },
+        { "points": 2, "effect": "-30s Cooldown, +3m/s Sprint Speed" },
+        { "points": 5, "effect": "+2s Duration, +1 Max Target" }
+      ]
+    }
+  ]
+}

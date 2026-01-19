@@ -1,0 +1,84 @@
+{
+  "id": "mina",
+  "name": "Mina",
+  "tags": ["Assassin", "Mage", "Burst"],
+  "baseStats": {
+    "health": 630,
+    "healthRegen": 2,
+    "bulletDamage": 7.31,
+    "fireRate": 3.97,
+    "clipSize": 12,
+    "reloadTime": 1.7,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.6,
+    "sprintSpeed": 1.6
+  },
+  "abilities": [
+    {
+      "id": "rake",
+      "name": "Rake",
+      "key": "1",
+      "type": "active",
+      "description": "Deal spirit damage scaling with target's missing health. On kill, heal yourself.",
+      "cooldown": 10,
+      "baseDamage": 60,
+      "spiritCoefficient": 1.0,
+      "missingHealthDamage": 3,
+      "healOnKill": 30,
+      "range": 10,
+      "upgrades": [
+        { "points": 1, "effect": "+20 healing per kill" },
+        { "points": 2, "effect": "+54 damage, improved healing scaling" },
+        { "points": 5, "effect": "+7% missing health as damage" }
+      ]
+    },
+    {
+      "id": "sanguine_retreat",
+      "name": "Sanguine Retreat",
+      "key": "2",
+      "type": "active",
+      "description": "Become untargetable, disperse and fly to location; recastable within 3s window.",
+      "cooldown": 32,
+      "duration": 0.65,
+      "range": 10,
+      "upgrades": [
+        { "points": 1, "effect": "+3m cast range" },
+        { "points": 2, "effect": "Gain +30% fire rate, add 8 bullets on cast" },
+        { "points": 5, "effect": "-12s cooldown" }
+      ]
+    },
+    {
+      "id": "love_bites",
+      "name": "Love Bites",
+      "key": "3",
+      "type": "passive",
+      "description": "Bullets and abilities apply stacking spirit damage; triggers bonus burst after buildup.",
+      "cooldown": 8,
+      "baseDamage": 6,
+      "spiritCoefficient": 0.06,
+      "procDamage": 55,
+      "upgrades": [
+        { "points": 1, "effect": "On proc: +4 m/s move speed for 3s" },
+        { "points": 2, "effect": "+3.6 damage, +49.5 bonus damage" },
+        { "points": 5, "effect": "On proc: -2 stamina, 30% slow for 3s" }
+      ]
+    },
+    {
+      "id": "nox_nostra",
+      "name": "Nox Nostra",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Release seeking bat swarm dealing spirit damage and applying silence; passive increases bats per Love Bites proc.",
+      "cooldown": 115,
+      "baseDamage": 6,
+      "spiritCoefficient": 0.12,
+      "range": 40,
+      "upgrades": [
+        { "points": 1, "effect": "+1.8 damage" },
+        { "points": 2, "effect": "-40s cooldown" },
+        { "points": 5, "effect": "On hit: +1% current health as bonus damage" }
+      ]
+    }
+  ]
+}

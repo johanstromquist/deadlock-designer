@@ -1,6 +1,7 @@
 // Deadlock Character Designer - Main Entry Point
 
 import { HeroSelect } from './components/HeroSelect.js';
+import { getTagIcon } from './utils/tagIcons.js';
 import { ItemShop } from './components/ItemShop.js';
 import { AbilityPanel } from './components/AbilityPanel.js';
 import { StatPanel } from './components/StatPanel.js';
@@ -73,7 +74,7 @@ class DeadlockDesigner {
     // Update header
     document.getElementById('selected-hero-name').textContent = hero.name;
     document.getElementById('selected-hero-tags').innerHTML = hero.tags
-      .map(tag => `<span class="hero-tag">${tag}</span>`)
+      .map(tag => `<span class="hero-tag tag-${tag.toLowerCase().replace(/\s+/g, '-')}"><span class="tag-icon">${getTagIcon(tag)}</span><span class="tag-label">${tag}</span></span>`)
       .join('');
 
     // Update hero portrait

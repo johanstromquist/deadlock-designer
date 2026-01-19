@@ -1,0 +1,89 @@
+{
+  "id": "victor",
+  "name": "Victor",
+  "tags": ["Tank", "Sustain", "Brawler"],
+  "baseStats": {
+    "health": 770,
+    "healthRegen": 1.5,
+    "bulletDamage": 12,
+    "fireRate": 5.05,
+    "clipSize": 24,
+    "reloadTime": 2.4,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.3,
+    "sprintSpeed": 1.1
+  },
+  "abilities": [
+    {
+      "id": "pain_battery",
+      "name": "Pain Battery",
+      "key": "1",
+      "type": "active",
+      "description": "Damage charges the battery; activation fires shocking bolts dealing spirit damage once per target.",
+      "cooldown": 2,
+      "baseDamage": 100,
+      "spiritCoefficient": 1.6,
+      "range": 20,
+      "upgrades": [
+        { "points": 1, "effect": "Apply 40% Slow for 2s" },
+        { "points": 2, "effect": "+36 Damage" },
+        { "points": 5, "effect": "On hero hit, heal 18% missing health" }
+      ]
+    },
+    {
+      "id": "jumpstart",
+      "name": "Jumpstart",
+      "key": "2",
+      "type": "active",
+      "description": "Deal 15% current health spirit damage to self; gain bonus regeneration and movement speed, decaying over duration.",
+      "cooldown": 23,
+      "healAmount": 100,
+      "spiritCoefficient": 1.8,
+      "moveSpeedBonus": 4,
+      "duration": 4.5,
+      "upgrades": [
+        { "points": 1, "effect": "+1.5 m/s Move Speed" },
+        { "points": 2, "effect": "+50 Total HP Regen" },
+        { "points": 5, "effect": "-4s Cooldown; purge non-ultimate debuffs on cast" }
+      ]
+    },
+    {
+      "id": "aura_of_suffering",
+      "name": "Aura of Suffering",
+      "key": "3",
+      "type": "active",
+      "description": "Deal escalating spirit damage over time to enemies and self.",
+      "cooldown": 2.5,
+      "baseDamage": 16,
+      "maxDamage": 70,
+      "spiritCoefficient": 1.15,
+      "selfDamagePercent": 70,
+      "radius": 7.7,
+      "duration": 10,
+      "upgrades": [
+        { "points": 1, "effect": "30% Slow to enemies" },
+        { "points": 2, "effect": "+8 Min DPS, +36 Max DPS" },
+        { "points": 5, "effect": "Enemies take +13% damage amplification" }
+      ]
+    },
+    {
+      "id": "shocking_reanimation",
+      "name": "Shocking Reanimation",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Revive after lethal damage at 60% health; deal spirit damage and stun nearby enemies.",
+      "cooldown": 190,
+      "baseDamage": 200,
+      "spiritCoefficient": 2.0,
+      "rebirthHealth": 60,
+      "stunDuration": 1.5,
+      "radius": 13,
+      "upgrades": [
+        { "points": 1, "effect": "+3m Radius, +90 Damage" },
+        { "points": 2, "effect": "+40% Rebirth Health" },
+        { "points": 5, "effect": "While on cooldown, gain 20% Fire Rate and 9 Spirit Damage per bullet" }
+      ]
+    }
+  ]
+}

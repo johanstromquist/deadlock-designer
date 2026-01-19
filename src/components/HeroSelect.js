@@ -1,4 +1,5 @@
 // Hero Selection Component
+import { getTagIcon } from '../utils/tagIcons.js';
 
 export class HeroSelect {
   constructor(container, onHeroSelect) {
@@ -65,7 +66,10 @@ export class HeroSelect {
 
   renderTagFilters(tags) {
     this.tagFilters.innerHTML = tags.map(tag => `
-      <button class="tag-btn" data-tag="${tag}">${tag}</button>
+      <button class="tag-btn tag-${tag.toLowerCase().replace(/\s+/g, '-')}" data-tag="${tag}">
+        <span class="tag-icon">${getTagIcon(tag)}</span>
+        <span class="tag-label">${tag}</span>
+      </button>
     `).join('');
 
     this.tagFilters.querySelectorAll('.tag-btn').forEach(btn => {
@@ -116,7 +120,7 @@ export class HeroSelect {
           </div>
           <div class="hero-name">${hero.name}</div>
           <div class="hero-card-tags">
-            ${hero.tags.slice(0, 2).map(tag => `<span class="hero-card-tag">${tag}</span>`).join('')}
+            ${hero.tags.map(tag => `<span class="hero-card-tag tag-${tag.toLowerCase().replace(/\s+/g, '-')}" title="${tag}">${getTagIcon(tag)}</span>`).join('')}
           </div>
         </div>
       `;

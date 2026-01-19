@@ -1,0 +1,87 @@
+{
+  "id": "sinclair",
+  "name": "Sinclair",
+  "tags": ["Mage", "Trickster", "Control"],
+  "baseStats": {
+    "health": 700,
+    "healthRegen": 2,
+    "bulletDamage": 17.8,
+    "fireRate": 2.72,
+    "clipSize": 16,
+    "reloadTime": 2.5,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.2,
+    "sprintSpeed": 1.6
+  },
+  "abilities": [
+    {
+      "id": "vexing_bolt",
+      "name": "Vexing Bolt",
+      "key": "1",
+      "type": "active",
+      "description": "Fire redirectable magic bolt dealing spirit damage, scaling as it travels.",
+      "cooldown": 24,
+      "baseDamage": 60,
+      "maxDamage": 120,
+      "spiritCoefficient": 1.86,
+      "radius": 3.25,
+      "range": 500,
+      "upgrades": [
+        { "points": 1, "effect": "Apply -25% Fire Rate debuff for 5s" },
+        { "points": 2, "effect": "-13s Cooldown" },
+        { "points": 5, "effect": "+126 Max Damage, +50% Assistant Damage" }
+      ]
+    },
+    {
+      "id": "spectral_assistant",
+      "name": "Spectral Assistant",
+      "key": "2",
+      "type": "active",
+      "description": "Summon assistant that attacks with weapon, enables position swaps.",
+      "cooldown": 40,
+      "baseDamage": 15,
+      "spiritCoefficient": 0.36,
+      "duration": 6,
+      "range": 15,
+      "upgrades": [
+        { "points": 1, "effect": "-10s Cooldown" },
+        { "points": 2, "effect": "+7s Duration, +5m Range" },
+        { "points": 5, "effect": "+60% Fire Rate, +12.6 Assistant Damage" }
+      ]
+    },
+    {
+      "id": "rabbit_hex",
+      "name": "Rabbit Hex",
+      "key": "3",
+      "type": "active",
+      "description": "Transform enemies into rabbits, increasing damage taken, boosting their movement.",
+      "cooldown": 26,
+      "duration": 2,
+      "damageAmp": 15,
+      "moveSpeedBonus": 36,
+      "radius": 6.5,
+      "range": 24,
+      "upgrades": [
+        { "points": 1, "effect": "-10s Cooldown" },
+        { "points": 2, "effect": "+1s Duration" },
+        { "points": 5, "effect": "+7% Damage Amp, +3m Radius" }
+      ]
+    },
+    {
+      "id": "audience_participation",
+      "name": "Audience Participation",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Copy enemy hero's ultimate ability for limited time.",
+      "cooldown": 85,
+      "duration": 12,
+      "copiedCooldown": 40,
+      "upgrades": [
+        { "points": 1, "effect": "Upgrade copied ultimate to Tier 1" },
+        { "points": 2, "effect": "Upgrade copied ultimate to Tier 2" },
+        { "points": 5, "effect": "Upgrade copied ultimate to Tier 3" }
+      ]
+    }
+  ]
+}

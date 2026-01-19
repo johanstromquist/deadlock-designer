@@ -1,0 +1,88 @@
+{
+  "id": "the_doorman",
+  "name": "The Doorman",
+  "tags": ["Support", "Control", "Zone Control"],
+  "baseStats": {
+    "health": 725,
+    "healthRegen": 1,
+    "bulletDamage": 29.3,
+    "fireRate": 1.47,
+    "clipSize": 8,
+    "reloadTime": 2.4,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7.9,
+    "sprintSpeed": 1.6
+  },
+  "abilities": [
+    {
+      "id": "call_bell",
+      "name": "Call Bell",
+      "key": "1",
+      "type": "active",
+      "description": "Throw out a call bell that deals spirit damage on impact. After a short delay it explodes, dealing additional spirit damage and causing reduced weapon accuracy and movement slow.",
+      "cooldown": 18,
+      "baseDamage": 40,
+      "spiritCoefficient": 1.0,
+      "explosionDamage": 55,
+      "radius": 5,
+      "duration": 4,
+      "upgrades": [
+        { "points": 1, "effect": "+2m Radius" },
+        { "points": 2, "effect": "+27 Impact Damage, +40 Explosion Damage" },
+        { "points": 5, "effect": "Impacts cause half-radius explosions" }
+      ]
+    },
+    {
+      "id": "doorway",
+      "name": "Doorway",
+      "key": "2",
+      "type": "active",
+      "description": "Place two connected doors in the world. Players and most projectiles entering one door will exit through the other.",
+      "cooldown": 40,
+      "duration": 20,
+      "range": 50,
+      "doorwayDistance": 60,
+      "upgrades": [
+        { "points": 1, "effect": "+10s Duration" },
+        { "points": 2, "effect": "Grants Barrier first time traveling through doors" },
+        { "points": 5, "effect": "+50m Doorway Distance, +30m Cast Range" }
+      ]
+    },
+    {
+      "id": "luggage_cart",
+      "name": "Luggage Cart",
+      "key": "3",
+      "type": "active",
+      "description": "Send out a luggage cart that deals spirit damage and pulls enemy heroes along its path. Can be alt-cast to target friendly heroes instead.",
+      "cooldown": 30,
+      "baseDamage": 80,
+      "spiritCoefficient": 0.75,
+      "duration": 6,
+      "range": 25,
+      "upgrades": [
+        { "points": 1, "effect": "-8s Cooldown" },
+        { "points": 2, "effect": "+15m Cast Range" },
+        { "points": 5, "effect": "+45 Cart Damage, 117 Damage and 1.2s stun on wall impact" }
+      ]
+    },
+    {
+      "id": "hotel_guest",
+      "name": "Hotel Guest",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Send the target's physical body to the Baroness Hotel. The guest must make their way to the exit elevator for return. Failure to check-out on time costs additional spirit damage.",
+      "cooldown": 120,
+      "baseDamage": 150,
+      "spiritCoefficient": 1.0,
+      "failureDamage": 250,
+      "duration": 6.5,
+      "range": 5,
+      "upgrades": [
+        { "points": 1, "effect": "+2m Cast Range" },
+        { "points": 2, "effect": "Unstoppable while channeling" },
+        { "points": 5, "effect": "-50s Cooldown" }
+      ]
+    }
+  ]
+}

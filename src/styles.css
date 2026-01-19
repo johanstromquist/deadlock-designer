@@ -163,6 +163,9 @@ body {
 }
 
 .tag-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: var(--spacing-xs) var(--spacing-md);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -174,15 +177,75 @@ body {
 }
 
 .tag-btn:hover {
-  border-color: var(--accent-orange);
-  color: var(--text-primary);
+  filter: brightness(1.2);
 }
 
-.tag-btn.active {
-  background: var(--accent-orange);
-  border-color: var(--accent-orange);
-  color: var(--bg-dark);
+.tag-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.tag-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Filter button colors - match hero card tags */
+.tag-btn.tag-tank { border-color: #6ab0e8; color: #6ab0e8; }
+.tag-btn.tag-brawler { border-color: #e89055; color: #e89055; }
+.tag-btn.tag-assassin { border-color: #b080d0; color: #b080d0; }
+.tag-btn.tag-carry { border-color: #e8c040; color: #e8c040; }
+.tag-btn.tag-duelist { border-color: #e07070; color: #e07070; }
+.tag-btn.tag-burst { border-color: #e85050; color: #e85050; }
+.tag-btn.tag-dot { border-color: #d88040; color: #d88040; }
+.tag-btn.tag-mage { border-color: #a080e0; color: #a080e0; }
+.tag-btn.tag-melee { border-color: #c0a080; color: #c0a080; }
+.tag-btn.tag-ranged { border-color: #70c0c0; color: #70c0c0; }
+.tag-btn.tag-sniper { border-color: #80b0d0; color: #80b0d0; }
+.tag-btn.tag-gunner { border-color: #a0a0b0; color: #a0a0b0; }
+.tag-btn.tag-support { border-color: #60c090; color: #60c090; }
+.tag-btn.tag-healer { border-color: #70d0a0; color: #70d0a0; }
+.tag-btn.tag-sustain { border-color: #60c0c0; color: #60c0c0; }
+.tag-btn.tag-control { border-color: #60b0d8; color: #60b0d8; }
+.tag-btn.tag-disabler { border-color: #8080c8; color: #8080c8; }
+.tag-btn.tag-initiator { border-color: #e8a040; color: #e8a040; }
+.tag-btn.tag-mobility { border-color: #70c0e8; color: #70c0e8; }
+.tag-btn.tag-engineer { border-color: #b89870; color: #b89870; }
+.tag-btn.tag-summoner { border-color: #b870c0; color: #b870c0; }
+.tag-btn.tag-team-fight { border-color: #d0c050; color: #d0c050; }
+.tag-btn.tag-trickster { border-color: #e070b0; color: #e070b0; }
+.tag-btn.tag-zone-control { border-color: #80a8c8; color: #80a8c8; }
+.tag-btn.tag-aoe { border-color: #e0a070; color: #e0a070; }
+.tag-btn.tag-agile { border-color: #90d8b0; color: #90d8b0; }
+
+/* Active state - filled background */
+.tag-btn.active.tag-tank { background: #6ab0e8; color: var(--bg-dark); }
+.tag-btn.active.tag-brawler { background: #e89055; color: var(--bg-dark); }
+.tag-btn.active.tag-assassin { background: #b080d0; color: var(--bg-dark); }
+.tag-btn.active.tag-carry { background: #e8c040; color: var(--bg-dark); }
+.tag-btn.active.tag-duelist { background: #e07070; color: var(--bg-dark); }
+.tag-btn.active.tag-burst { background: #e85050; color: var(--bg-dark); }
+.tag-btn.active.tag-dot { background: #d88040; color: var(--bg-dark); }
+.tag-btn.active.tag-mage { background: #a080e0; color: var(--bg-dark); }
+.tag-btn.active.tag-melee { background: #c0a080; color: var(--bg-dark); }
+.tag-btn.active.tag-ranged { background: #70c0c0; color: var(--bg-dark); }
+.tag-btn.active.tag-sniper { background: #80b0d0; color: var(--bg-dark); }
+.tag-btn.active.tag-gunner { background: #a0a0b0; color: var(--bg-dark); }
+.tag-btn.active.tag-support { background: #60c090; color: var(--bg-dark); }
+.tag-btn.active.tag-healer { background: #70d0a0; color: var(--bg-dark); }
+.tag-btn.active.tag-sustain { background: #60c0c0; color: var(--bg-dark); }
+.tag-btn.active.tag-control { background: #60b0d8; color: var(--bg-dark); }
+.tag-btn.active.tag-disabler { background: #8080c8; color: var(--bg-dark); }
+.tag-btn.active.tag-initiator { background: #e8a040; color: var(--bg-dark); }
+.tag-btn.active.tag-mobility { background: #70c0e8; color: var(--bg-dark); }
+.tag-btn.active.tag-engineer { background: #b89870; color: var(--bg-dark); }
+.tag-btn.active.tag-summoner { background: #b870c0; color: var(--bg-dark); }
+.tag-btn.active.tag-team-fight { background: #d0c050; color: var(--bg-dark); }
+.tag-btn.active.tag-trickster { background: #e070b0; color: var(--bg-dark); }
+.tag-btn.active.tag-zone-control { background: #80a8c8; color: var(--bg-dark); }
+.tag-btn.active.tag-aoe { background: #e0a070; color: var(--bg-dark); }
+.tag-btn.active.tag-agile { background: #90d8b0; color: var(--bg-dark); }
 
 /* Hero Grid */
 .hero-grid {
@@ -287,12 +350,45 @@ body {
 }
 
 .hero-card-tag {
-  font-size: 0.7rem;
-  padding: 2px 6px;
-  background: var(--bg-hover);
-  border-radius: 10px;
-  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 6px;
 }
+
+.hero-card-tag svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Hero type tag colors */
+.tag-tank { background: rgba(70, 130, 180, 0.25); color: #6ab0e8; }
+.tag-brawler { background: rgba(220, 120, 60, 0.25); color: #e89055; }
+.tag-assassin { background: rgba(140, 80, 160, 0.25); color: #b080d0; }
+.tag-carry { background: rgba(218, 165, 32, 0.25); color: #e8c040; }
+.tag-duelist { background: rgba(200, 80, 80, 0.25); color: #e07070; }
+.tag-burst { background: rgba(220, 60, 60, 0.25); color: #e85050; }
+.tag-dot { background: rgba(200, 100, 50, 0.25); color: #d88040; }
+.tag-mage { background: rgba(130, 90, 200, 0.25); color: #a080e0; }
+.tag-melee { background: rgba(160, 130, 100, 0.25); color: #c0a080; }
+.tag-ranged { background: rgba(80, 160, 160, 0.25); color: #70c0c0; }
+.tag-sniper { background: rgba(100, 140, 180, 0.25); color: #80b0d0; }
+.tag-gunner { background: rgba(140, 140, 150, 0.25); color: #a0a0b0; }
+.tag-support { background: rgba(80, 180, 120, 0.25); color: #60c090; }
+.tag-healer { background: rgba(100, 200, 140, 0.25); color: #70d0a0; }
+.tag-sustain { background: rgba(80, 170, 170, 0.25); color: #60c0c0; }
+.tag-control { background: rgba(80, 160, 200, 0.25); color: #60b0d8; }
+.tag-disabler { background: rgba(100, 100, 180, 0.25); color: #8080c8; }
+.tag-initiator { background: rgba(230, 140, 50, 0.25); color: #e8a040; }
+.tag-mobility { background: rgba(100, 180, 220, 0.25); color: #70c0e8; }
+.tag-engineer { background: rgba(150, 120, 90, 0.25); color: #b89870; }
+.tag-summoner { background: rgba(150, 90, 170, 0.25); color: #b870c0; }
+.tag-team-fight { background: rgba(200, 180, 60, 0.25); color: #d0c050; }
+.tag-trickster { background: rgba(200, 80, 150, 0.25); color: #e070b0; }
+.tag-zone-control { background: rgba(100, 130, 160, 0.25); color: #80a8c8; }
+.tag-aoe { background: rgba(224, 160, 112, 0.25); color: #e0a070; }
+.tag-agile { background: rgba(144, 216, 176, 0.25); color: #90d8b0; }
 
 /* Build Panel */
 .build-panel {
@@ -377,13 +473,44 @@ body {
 }
 
 .hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.85rem;
   padding: var(--spacing-xs) var(--spacing-md);
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
+  border-radius: 20px;
   color: var(--text-secondary);
 }
+
+/* Hero tag colors - same as filter buttons */
+.hero-tag.tag-tank { border-color: #6ab0e8; color: #6ab0e8; }
+.hero-tag.tag-brawler { border-color: #e89055; color: #e89055; }
+.hero-tag.tag-assassin { border-color: #b080d0; color: #b080d0; }
+.hero-tag.tag-carry { border-color: #e8c040; color: #e8c040; }
+.hero-tag.tag-duelist { border-color: #e07070; color: #e07070; }
+.hero-tag.tag-burst { border-color: #e85050; color: #e85050; }
+.hero-tag.tag-dot { border-color: #d88040; color: #d88040; }
+.hero-tag.tag-mage { border-color: #a080e0; color: #a080e0; }
+.hero-tag.tag-melee { border-color: #c0a080; color: #c0a080; }
+.hero-tag.tag-ranged { border-color: #70c0c0; color: #70c0c0; }
+.hero-tag.tag-sniper { border-color: #80b0d0; color: #80b0d0; }
+.hero-tag.tag-gunner { border-color: #a0a0b0; color: #a0a0b0; }
+.hero-tag.tag-support { border-color: #60c090; color: #60c090; }
+.hero-tag.tag-healer { border-color: #70d0a0; color: #70d0a0; }
+.hero-tag.tag-sustain { border-color: #60c0c0; color: #60c0c0; }
+.hero-tag.tag-control { border-color: #60b0d8; color: #60b0d8; }
+.hero-tag.tag-disabler { border-color: #8080c8; color: #8080c8; }
+.hero-tag.tag-initiator { border-color: #e8a040; color: #e8a040; }
+.hero-tag.tag-mobility { border-color: #70c0e8; color: #70c0e8; }
+.hero-tag.tag-engineer { border-color: #b89870; color: #b89870; }
+.hero-tag.tag-summoner { border-color: #b870c0; color: #b870c0; }
+.hero-tag.tag-team-fight { border-color: #d0c050; color: #d0c050; }
+.hero-tag.tag-trickster { border-color: #e070b0; color: #e070b0; }
+.hero-tag.tag-zone-control { border-color: #80a8c8; color: #80a8c8; }
+.hero-tag.tag-aoe { border-color: #e0a070; color: #e0a070; }
+.hero-tag.tag-agile { border-color: #90d8b0; color: #90d8b0; }
 
 .build-content {
   display: grid;
@@ -415,11 +542,50 @@ body {
   border-radius: var(--radius-md);
   padding: var(--spacing-md);
   transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.ability-card.has-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background-image: var(--ability-bg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.15;
+  pointer-events: none;
+  transform: translate(10%, -10%);
+  filter: blur(1px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.ability-card:hover.has-bg::before {
+  opacity: 0.25;
+  transform: translate(5%, -5%);
+}
+
+.ability-card .ability-content {
+  position: relative;
+  z-index: 1;
 }
 
 .ability-card.ultimate {
   border-color: var(--accent-orange);
   background: linear-gradient(135deg, var(--bg-card), rgba(245, 166, 35, 0.1));
+}
+
+.ability-card.ultimate.has-bg::before {
+  opacity: 0.2;
+  filter: blur(0px);
+}
+
+.ability-card.ultimate:hover.has-bg::before {
+  opacity: 0.35;
 }
 
 .ability-header {

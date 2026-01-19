@@ -1,0 +1,90 @@
+{
+  "id": "vyper",
+  "name": "Vyper",
+  "tags": ["Gunner", "Mobility", "Carry"],
+  "baseStats": {
+    "health": 750,
+    "healthRegen": 2,
+    "bulletDamage": 6.58,
+    "fireRate": 14.3,
+    "clipSize": 24,
+    "reloadTime": 1.6,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 6.9,
+    "sprintSpeed": 1.6
+  },
+  "abilities": [
+    {
+      "id": "screwjab_dagger",
+      "name": "Screwjab Dagger",
+      "key": "1",
+      "type": "active",
+      "description": "Throw a dagger dealing spirit damage and applying movement slow. Subsequent daggers stack damage and slow.",
+      "cooldown": 10,
+      "baseDamage": 50,
+      "spiritCoefficient": 0.8,
+      "damagePerStack": 25,
+      "slowAmount": 35,
+      "slowPerStack": 15,
+      "maxStacks": 3,
+      "upgrades": [
+        { "points": 1, "effect": "+1 Charge" },
+        { "points": 2, "effect": "On Hit: -8% Bullet Resist, -5% per stack" },
+        { "points": 5, "effect": "Refund 40% charge cooldown on hit" }
+      ]
+    },
+    {
+      "id": "lethal_venom",
+      "name": "Lethal Venom",
+      "key": "2",
+      "type": "active",
+      "description": "Inject target with venom triggering after delay, dealing spirit damage scaled by missing health.",
+      "cooldown": 20,
+      "baseDamage": 20,
+      "maxDamage": 165,
+      "spiritCoefficient": 2.79,
+      "buildupDuration": 3,
+      "range": 15,
+      "upgrades": [
+        { "points": 1, "effect": "+31.5 max venom damage" },
+        { "points": 2, "effect": "-40% healing reduction" },
+        { "points": 5, "effect": "Bullets build up lethal venom" }
+      ]
+    },
+    {
+      "id": "slither",
+      "name": "Slither",
+      "key": "3",
+      "type": "passive",
+      "description": "Increased slide distance, can slide uphill, faster turning while sliding.",
+      "cooldown": 0,
+      "slideDistanceBonus": 10,
+      "upgrades": [
+        { "points": 1, "effect": "+20% slide distance" },
+        { "points": 2, "effect": "+2 stamina" },
+        { "points": 5, "effect": "On slide: gain 180 barrier for 5s (8s cooldown)" }
+      ]
+    },
+    {
+      "id": "petrifying_bola",
+      "name": "Petrifying Bola",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Throw explosive bola slowing and damaging enemies. Direct hits petrify targets, blocking damage and actions.",
+      "cooldown": 90,
+      "baseDamage": 45,
+      "spiritCoefficient": 0.744,
+      "petrifyDamage": 165,
+      "slowAmount": 50,
+      "slowDuration": 1.5,
+      "petrifyDuration": 2,
+      "radius": 8,
+      "upgrades": [
+        { "points": 1, "effect": "+49.5 petrify damage" },
+        { "points": 2, "effect": "-25s cooldown" },
+        { "points": 5, "effect": "+1s petrify duration; petrifies all enemies in area" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "billy",
+  "name": "Billy",
+  "tags": ["Brawler", "Melee", "Tank"],
+  "baseStats": {
+    "health": 790,
+    "healthRegen": 2.5,
+    "bulletDamage": 6.3,
+    "fireRate": 11.8,
+    "clipSize": 30,
+    "reloadTime": 2.9,
+    "bulletResist": 0,
+    "spiritResist": 0,
+    "moveSpeed": 7,
+    "sprintSpeed": 1.6
+  },
+  "abilities": [
+    {
+      "id": "bashdown",
+      "name": "Bashdown",
+      "key": "1",
+      "type": "active",
+      "description": "Slam your bat into the ground, pulling enemies down and dealing melee damage.",
+      "cooldown": 35,
+      "baseDamage": 90,
+      "spiritCoefficient": 1.1,
+      "radius": 4.5,
+      "upgrades": [
+        { "points": 1, "effect": "-10s Cooldown" },
+        { "points": 2, "effect": "+1.3m Radius" },
+        { "points": 5, "effect": "Deals 60% Heavy Melee Damage" }
+      ]
+    },
+    {
+      "id": "rising_ram",
+      "name": "Rising Ram",
+      "key": "2",
+      "type": "active",
+      "description": "Charge head-first into an enemy and send them into the air.",
+      "cooldown": 30,
+      "baseDamage": 55,
+      "spiritCoefficient": 1.7,
+      "duration": 0.51,
+      "upgrades": [
+        { "points": 1, "effect": "On Impact -50% cooldown" },
+        { "points": 2, "effect": "On Impact +35% weapon damage for 5s" },
+        { "points": 5, "effect": "On Impact Deal 6.5% max health as spirit damage" }
+      ]
+    },
+    {
+      "id": "blasted",
+      "name": "Blasted",
+      "key": "3",
+      "type": "active",
+      "description": "Passive: Melee hits restore ammo and inflict Wrecked. Active: Empower weapons; melee boosts max health, bullets amplified against Wrecked enemies.",
+      "cooldown": 27,
+      "duration": 8,
+      "bonusHealth": 80,
+      "spiritCoefficient": 0.7,
+      "upgrades": [
+        { "points": 1, "effect": "+2.25 m/s bonus move speed while Blasted" },
+        { "points": 2, "effect": "+1 Bashdown Charge on use; +7% Wrecked Bullet Amp" },
+        { "points": 5, "effect": "+50 Melee Bonus Health" }
+      ]
+    },
+    {
+      "id": "chain_gang",
+      "name": "Chain Gang",
+      "key": "4",
+      "type": "ultimate",
+      "description": "Chain nearby enemies to you; they cannot use movement abilities and receive heavy slow.",
+      "cooldown": 150,
+      "baseDamage": 150,
+      "spiritCoefficient": 1.0,
+      "duration": 2.8,
+      "radius": 13,
+      "upgrades": [
+        { "points": 1, "effect": "-25s Cooldown" },
+        { "points": 2, "effect": "+15% Spirit and Bullet Resist" },
+        { "points": 5, "effect": "+90 Spirit Damage; Unstoppable for 2s on pull" }
+      ]
+    }
+  ]
+}
